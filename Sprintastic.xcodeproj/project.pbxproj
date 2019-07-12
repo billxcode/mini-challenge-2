@@ -14,6 +14,10 @@
 		099EBEF822D86B8A00D3658F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 099EBEF622D86B8A00D3658F /* LaunchScreen.storyboard */; };
 		099EBF0322D8795600D3658F /* CustomActivitiesImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099EBF0222D8795600D3658F /* CustomActivitiesImageView.swift */; };
 		099EBF0522D882DB00D3658F /* StartPhaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099EBF0422D882DB00D3658F /* StartPhaseViewController.swift */; };
+		099EBF0722D892B200D3658F /* AccelerationPhaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099EBF0622D892B200D3658F /* AccelerationPhaseViewController.swift */; };
+		099EBF0922D892DE00D3658F /* ConstantPhaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099EBF0822D892DE00D3658F /* ConstantPhaseViewController.swift */; };
+		099EBF0B22D892F200D3658F /* FinishPhaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099EBF0A22D892F200D3658F /* FinishPhaseViewController.swift */; };
+		099EBF0D22D8933800D3658F /* ExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099EBF0C22D8933800D3658F /* ExerciseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		099EBEF922D86B8A00D3658F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		099EBF0222D8795600D3658F /* CustomActivitiesImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomActivitiesImageView.swift; sourceTree = "<group>"; };
 		099EBF0422D882DB00D3658F /* StartPhaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPhaseViewController.swift; sourceTree = "<group>"; };
+		099EBF0622D892B200D3658F /* AccelerationPhaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccelerationPhaseViewController.swift; sourceTree = "<group>"; };
+		099EBF0822D892DE00D3658F /* ConstantPhaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantPhaseViewController.swift; sourceTree = "<group>"; };
+		099EBF0A22D892F200D3658F /* FinishPhaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishPhaseViewController.swift; sourceTree = "<group>"; };
+		099EBF0C22D8933800D3658F /* ExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +90,10 @@
 				099EBEEF22D86B8900D3658F /* ViewController.swift */,
 				099EBF0222D8795600D3658F /* CustomActivitiesImageView.swift */,
 				099EBF0422D882DB00D3658F /* StartPhaseViewController.swift */,
+				099EBF0622D892B200D3658F /* AccelerationPhaseViewController.swift */,
+				099EBF0822D892DE00D3658F /* ConstantPhaseViewController.swift */,
+				099EBF0A22D892F200D3658F /* FinishPhaseViewController.swift */,
+				099EBF0C22D8933800D3658F /* ExerciseViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -165,9 +177,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				099EBF0922D892DE00D3658F /* ConstantPhaseViewController.swift in Sources */,
 				099EBF0322D8795600D3658F /* CustomActivitiesImageView.swift in Sources */,
+				099EBF0B22D892F200D3658F /* FinishPhaseViewController.swift in Sources */,
 				099EBEF022D86B8900D3658F /* ViewController.swift in Sources */,
 				099EBEEE22D86B8900D3658F /* AppDelegate.swift in Sources */,
+				099EBF0722D892B200D3658F /* AccelerationPhaseViewController.swift in Sources */,
+				099EBF0D22D8933800D3658F /* ExerciseViewController.swift in Sources */,
 				099EBF0522D882DB00D3658F /* StartPhaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,7 +331,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C476YGMRCM;
+				DEVELOPMENT_TEAM = 2GUBR74QSP;
 				INFOPLIST_FILE = Sprintastic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -333,7 +349,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C476YGMRCM;
+				DEVELOPMENT_TEAM = 2GUBR74QSP;
 				INFOPLIST_FILE = Sprintastic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
