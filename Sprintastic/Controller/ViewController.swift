@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var finishImageView: UIImageView!
     @IBOutlet weak var exerciseImageView: UIImageView!
     var bill = 0
+    //fisrt commit by bianka
     override func viewDidLoad() {
         super.viewDidLoad()
         
