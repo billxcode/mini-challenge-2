@@ -10,6 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var startImageView: UIImageView!
+    @IBOutlet weak var accelerationImageView: UIImageView!
+    @IBOutlet weak var constanImageView: UIImageView!
+    @IBOutlet weak var finishImageView: UIImageView!
+    @IBOutlet weak var exerciseImageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
