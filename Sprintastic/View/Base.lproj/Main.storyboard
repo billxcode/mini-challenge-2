@@ -54,9 +54,10 @@
                         <outlet property="finishImageView" destination="V6C-hP-ASn" id="RCY-hg-FNk"/>
                         <outlet property="startImageView" destination="WWD-Me-9G6" id="BaR-P9-EQB"/>
                         <segue destination="0yv-6h-PB5" kind="show" identifier="goToStartPhase" id="1Mj-0a-eWc"/>
-                        <segue destination="Tzj-fI-gRq" kind="show" id="c0o-H8-UG5"/>
-                        <segue destination="DDa-gW-80c" kind="show" id="5tX-4a-p3L"/>
-                        <segue destination="12b-EK-dqI" kind="show" id="i1a-MC-Imq"/>
+                        <segue destination="Tzj-fI-gRq" kind="show" identifier="goToAccelerationPhase" id="c0o-H8-UG5"/>
+                        <segue destination="DDa-gW-80c" kind="show" identifier="goToConstantPhase" id="5tX-4a-p3L"/>
+                        <segue destination="12b-EK-dqI" kind="show" identifier="goToFinishPhase" id="i1a-MC-Imq"/>
+                        <segue destination="qFE-1e-ICk" kind="show" identifier="goToExercisePhase" id="WBl-U2-2bd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -96,7 +97,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TSk-pf-qqg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1861" y="-117"/>
+            <point key="canvasLocation" x="1861" y="-131"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="H4c-hC-l0r">
+            <objects>
+                <viewController id="qFE-1e-ICk" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vZu-Df-zLH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="FbB-lS-nIF"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mgb-Ue-S77" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1861" y="1202"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Btj-3D-8y9">
@@ -111,7 +127,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HfZ-kH-5Q2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1861" y="548"/>
+            <point key="canvasLocation" x="1861" y="527"/>
         </scene>
         <!--Start Phase View Controller-->
         <scene sceneID="Ee4-K8-zof">
