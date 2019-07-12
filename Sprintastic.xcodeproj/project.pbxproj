@@ -13,6 +13,7 @@
 		099EBEF522D86B8A00D3658F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 099EBEF422D86B8A00D3658F /* Assets.xcassets */; };
 		099EBEF822D86B8A00D3658F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 099EBEF622D86B8A00D3658F /* LaunchScreen.storyboard */; };
 		099EBF0322D8795600D3658F /* CustomActivitiesImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099EBF0222D8795600D3658F /* CustomActivitiesImageView.swift */; };
+		099EBF0522D882DB00D3658F /* StartPhaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099EBF0422D882DB00D3658F /* StartPhaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		099EBEF722D86B8A00D3658F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		099EBEF922D86B8A00D3658F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		099EBF0222D8795600D3658F /* CustomActivitiesImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomActivitiesImageView.swift; sourceTree = "<group>"; };
+		099EBF0422D882DB00D3658F /* StartPhaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPhaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				099EBEEF22D86B8900D3658F /* ViewController.swift */,
 				099EBF0222D8795600D3658F /* CustomActivitiesImageView.swift */,
+				099EBF0422D882DB00D3658F /* StartPhaseViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 				099EBF0322D8795600D3658F /* CustomActivitiesImageView.swift in Sources */,
 				099EBEF022D86B8900D3658F /* ViewController.swift in Sources */,
 				099EBEEE22D86B8900D3658F /* AppDelegate.swift in Sources */,
+				099EBF0522D882DB00D3658F /* StartPhaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -21,7 +21,9 @@ class ViewController: UIViewController {
         
         // Do any additional setup after loading the view.
     }
-
-
+    
+    @IBAction func startPhaseTapped(_ sender: UITapGestureRecognizer) {
+        performSegue(withIdentifier: "goToStartPhase", sender: self)
+    }
 }
 
