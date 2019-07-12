@@ -15,8 +15,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var constanImageView: UIImageView!
     @IBOutlet weak var finishImageView: UIImageView!
     @IBOutlet weak var exerciseImageView: UIImageView!
+    var bill = 0
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view.
     }
     
