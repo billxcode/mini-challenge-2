@@ -26,21 +26,37 @@
                                     <outletCollection property="gestureRecognizers" destination="PtV-NX-sNC" appends="YES" id="1z6-19-61V"/>
                                 </connections>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="start" translatesAutoresizingMaskIntoConstraints="NO" id="gwR-Ca-NaK" customClass="CustomActivitiesImageView" customModule="Sprintastic" customModuleProvider="target">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="start" translatesAutoresizingMaskIntoConstraints="NO" id="gwR-Ca-NaK" customClass="CustomActivitiesImageView" customModule="Sprintastic" customModuleProvider="target">
                                 <rect key="frame" x="20" y="358" width="175" height="175"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Mgm-55-0g5" appends="YES" id="KD4-XK-Sxb"/>
+                                </connections>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="start" translatesAutoresizingMaskIntoConstraints="NO" id="V6C-hP-ASn" customClass="CustomActivitiesImageView" customModule="Sprintastic" customModuleProvider="target">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="start" translatesAutoresizingMaskIntoConstraints="NO" id="V6C-hP-ASn" customClass="CustomActivitiesImageView" customModule="Sprintastic" customModuleProvider="target">
                                 <rect key="frame" x="219" y="358" width="175" height="175"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="vox-8B-yIe" appends="YES" id="N2c-ko-n4j"/>
+                                </connections>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="acceleration" translatesAutoresizingMaskIntoConstraints="NO" id="ktg-eb-7dL" customClass="CustomActivitiesImageView" customModule="Sprintastic" customModuleProvider="target">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="acceleration" translatesAutoresizingMaskIntoConstraints="NO" id="ktg-eb-7dL" customClass="CustomActivitiesImageView" customModule="Sprintastic" customModuleProvider="target">
                                 <rect key="frame" x="219" y="162" width="175" height="175"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="b8c-fm-lUp" appends="YES" id="WL4-GI-GB5"/>
+                                </connections>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="start" translatesAutoresizingMaskIntoConstraints="NO" id="EnO-vu-4tU" customClass="CustomActivitiesImageView" customModule="Sprintastic" customModuleProvider="target">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="start" translatesAutoresizingMaskIntoConstraints="NO" id="EnO-vu-4tU" customClass="CustomActivitiesImageView" customModule="Sprintastic" customModuleProvider="target">
                                 <rect key="frame" x="21" y="554" width="373" height="175"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Zlg-3Q-Zdv" appends="YES" id="eOe-ON-liT"/>
+                                </connections>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -61,18 +77,38 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="PtV-NX-sNC">
+                <tapGestureRecognizer id="PtV-NX-sNC" userLabel="Start Phase Tap Gesture Recognizer">
                     <connections>
                         <action selector="startPhaseTapped:" destination="BYZ-38-t0r" id="c9g-36-S97"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="b8c-fm-lUp" userLabel="Acceleration Tap Gesture Recognizer">
+                    <connections>
+                        <action selector="accelerationPhaseTapped:" destination="BYZ-38-t0r" id="aBo-7u-EK7"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Mgm-55-0g5" userLabel="Constant Phase Tap Gesture Recognizer">
+                    <connections>
+                        <action selector="constantPhaseTapped:" destination="BYZ-38-t0r" id="om6-1O-tcp"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="vox-8B-yIe" userLabel="Finish Phase Tap Gesture Recognizer">
+                    <connections>
+                        <action selector="finishPhaseTapped:" destination="BYZ-38-t0r" id="LAJ-a6-UsS"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Zlg-3Q-Zdv" userLabel="Exercise Tap Gesture Recognizer">
+                    <connections>
+                        <action selector="exerciseTapped:" destination="BYZ-38-t0r" id="a6j-U0-S8c"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="970" y="-544"/>
         </scene>
-        <!--View Controller-->
+        <!--Acceleration Phase View Controller-->
         <scene sceneID="6Cf-uN-H7p">
             <objects>
-                <viewController id="Tzj-fI-gRq" sceneMemberID="viewController">
+                <viewController id="Tzj-fI-gRq" customClass="AccelerationPhaseViewController" customModule="Sprintastic" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="s7b-L6-9Ip">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -84,10 +120,10 @@
             </objects>
             <point key="canvasLocation" x="1861" y="-777"/>
         </scene>
-        <!--View Controller-->
+        <!--Constant Phase View Controller-->
         <scene sceneID="pOs-cf-h5n">
             <objects>
-                <viewController id="DDa-gW-80c" sceneMemberID="viewController">
+                <viewController id="DDa-gW-80c" customClass="ConstantPhaseViewController" customModule="Sprintastic" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DYX-YM-uR6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -99,10 +135,10 @@
             </objects>
             <point key="canvasLocation" x="1861" y="-131"/>
         </scene>
-        <!--View Controller-->
+        <!--Exercise View Controller-->
         <scene sceneID="H4c-hC-l0r">
             <objects>
-                <viewController id="qFE-1e-ICk" sceneMemberID="viewController">
+                <viewController id="qFE-1e-ICk" customClass="ExerciseViewController" customModule="Sprintastic" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vZu-Df-zLH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -114,10 +150,10 @@
             </objects>
             <point key="canvasLocation" x="1861" y="1202"/>
         </scene>
-        <!--View Controller-->
+        <!--Finish Phase View Controller-->
         <scene sceneID="Btj-3D-8y9">
             <objects>
-                <viewController id="12b-EK-dqI" sceneMemberID="viewController">
+                <viewController id="12b-EK-dqI" customClass="FinishPhaseViewController" customModule="Sprintastic" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ue8-WQ-027">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

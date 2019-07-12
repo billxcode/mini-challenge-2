@@ -25,5 +25,17 @@ class ViewController: UIViewController {
     @IBAction func startPhaseTapped(_ sender: UITapGestureRecognizer) {
         performSegue(withIdentifier: "goToStartPhase", sender: self)
     }
+    @IBAction func accelerationPhaseTapped(_ sender: UITapGestureRecognizer) {
+        performSegue(withIdentifier: "goToAccelerationPhase", sender: self)
+    }
+    @IBAction func constantPhaseTapped(_ sender: UITapGestureRecognizer) {
+        performSegue(withIdentifier: "goToConstantPhase", sender: self)
+    }
+    @IBAction func finishPhaseTapped(_ sender: UITapGestureRecognizer) {
+        performSegue(withIdentifier: "goToFinishPhase", sender: self)
+    }
+    @IBAction func exerciseTapped(_ sender: UITapGestureRecognizer) {
+        performSegue(withIdentifier: "goToExercisePhase", sender: self)
+    }
 }
 
