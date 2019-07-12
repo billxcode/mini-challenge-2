@@ -1,5 +1,5 @@
 //
-//  CustomActivitiesImageView.swift
+//  CustomButton.swift
 //  Sprintastic
 //
 //  Created by Idris on 12/07/19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CustomActivitiesImageView: UIImageView {
+class CustomButton: UIButton {
 
     /*
     // Only override draw() if you perform custom drawing.
@@ -18,7 +18,6 @@ class CustomActivitiesImageView: UIImageView {
     }
     */
     override func awakeFromNib() {
-        layer.cornerRadius = 18
+        layer.cornerRadius = 5
     }
-
 }
