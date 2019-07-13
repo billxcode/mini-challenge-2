@@ -7,22 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0983BDD022DA1D0A002A1102 /* Phase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0983BDCF22DA1D0A002A1102 /* Phase.swift */; };
+		0983BDD322DA26E8002A1102 /* PhaseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0983BDD222DA26E8002A1102 /* PhaseDetailViewController.swift */; };
 		099EBEEE22D86B8900D3658F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099EBEED22D86B8900D3658F /* AppDelegate.swift */; };
 		099EBEF022D86B8900D3658F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099EBEEF22D86B8900D3658F /* ViewController.swift */; };
 		099EBEF322D86B8900D3658F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 099EBEF122D86B8900D3658F /* Main.storyboard */; };
 		099EBEF522D86B8A00D3658F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 099EBEF422D86B8A00D3658F /* Assets.xcassets */; };
 		099EBEF822D86B8A00D3658F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 099EBEF622D86B8A00D3658F /* LaunchScreen.storyboard */; };
 		099EBF0322D8795600D3658F /* CustomActivitiesImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099EBF0222D8795600D3658F /* CustomActivitiesImageView.swift */; };
-		099EBF0522D882DB00D3658F /* StartPhaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099EBF0422D882DB00D3658F /* StartPhaseViewController.swift */; };
-		099EBF0722D892B200D3658F /* AccelerationPhaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099EBF0622D892B200D3658F /* AccelerationPhaseViewController.swift */; };
-		099EBF0922D892DE00D3658F /* ConstantPhaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099EBF0822D892DE00D3658F /* ConstantPhaseViewController.swift */; };
-		099EBF0B22D892F200D3658F /* FinishPhaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099EBF0A22D892F200D3658F /* FinishPhaseViewController.swift */; };
-		099EBF0D22D8933800D3658F /* ExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099EBF0C22D8933800D3658F /* ExerciseViewController.swift */; };
 		099EBF0F22D8B42200D3658F /* cataclysmo.regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 099EBF0E22D8B42200D3658F /* cataclysmo.regular.otf */; };
 		099EBF1222D8BA1B00D3658F /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099EBF1122D8BA1B00D3658F /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0983BDCF22DA1D0A002A1102 /* Phase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Phase.swift; sourceTree = "<group>"; };
+		0983BDD222DA26E8002A1102 /* PhaseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhaseDetailViewController.swift; sourceTree = "<group>"; };
 		099EBEEA22D86B8900D3658F /* Sprintastic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sprintastic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		099EBEED22D86B8900D3658F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		099EBEEF22D86B8900D3658F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,11 +30,6 @@
 		099EBEF722D86B8A00D3658F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		099EBEF922D86B8A00D3658F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		099EBF0222D8795600D3658F /* CustomActivitiesImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomActivitiesImageView.swift; sourceTree = "<group>"; };
-		099EBF0422D882DB00D3658F /* StartPhaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPhaseViewController.swift; sourceTree = "<group>"; };
-		099EBF0622D892B200D3658F /* AccelerationPhaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccelerationPhaseViewController.swift; sourceTree = "<group>"; };
-		099EBF0822D892DE00D3658F /* ConstantPhaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantPhaseViewController.swift; sourceTree = "<group>"; };
-		099EBF0A22D892F200D3658F /* FinishPhaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishPhaseViewController.swift; sourceTree = "<group>"; };
-		099EBF0C22D8933800D3658F /* ExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseViewController.swift; sourceTree = "<group>"; };
 		099EBF0E22D8B42200D3658F /* cataclysmo.regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = cataclysmo.regular.otf; sourceTree = "<group>"; };
 		099EBF1122D8BA1B00D3658F /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -51,6 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0983BDD122DA1D0F002A1102 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0983BDCF22DA1D0A002A1102 /* Phase.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		099EBEE122D86B8900D3658F = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +78,7 @@
 				099EBEF922D86B8A00D3658F /* Info.plist */,
 				099EBF1022D8B43900D3658F /* font */,
 				099EBEED22D86B8900D3658F /* AppDelegate.swift */,
+				0983BDD122DA1D0F002A1102 /* Model */,
 			);
 			path = Sprintastic;
 			sourceTree = "<group>";
@@ -94,12 +97,8 @@
 			children = (
 				099EBEEF22D86B8900D3658F /* ViewController.swift */,
 				099EBF0222D8795600D3658F /* CustomActivitiesImageView.swift */,
-				099EBF0422D882DB00D3658F /* StartPhaseViewController.swift */,
-				099EBF0622D892B200D3658F /* AccelerationPhaseViewController.swift */,
-				099EBF0822D892DE00D3658F /* ConstantPhaseViewController.swift */,
-				099EBF0A22D892F200D3658F /* FinishPhaseViewController.swift */,
-				099EBF0C22D8933800D3658F /* ExerciseViewController.swift */,
 				099EBF1122D8BA1B00D3658F /* CustomButton.swift */,
+				0983BDD222DA26E8002A1102 /* PhaseDetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -192,15 +191,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				099EBF0922D892DE00D3658F /* ConstantPhaseViewController.swift in Sources */,
 				099EBF0322D8795600D3658F /* CustomActivitiesImageView.swift in Sources */,
+				0983BDD322DA26E8002A1102 /* PhaseDetailViewController.swift in Sources */,
 				099EBF1222D8BA1B00D3658F /* CustomButton.swift in Sources */,
-				099EBF0B22D892F200D3658F /* FinishPhaseViewController.swift in Sources */,
 				099EBEF022D86B8900D3658F /* ViewController.swift in Sources */,
 				099EBEEE22D86B8900D3658F /* AppDelegate.swift in Sources */,
-				099EBF0722D892B200D3658F /* AccelerationPhaseViewController.swift in Sources */,
-				099EBF0D22D8933800D3658F /* ExerciseViewController.swift in Sources */,
-				099EBF0522D882DB00D3658F /* StartPhaseViewController.swift in Sources */,
+				0983BDD022DA1D0A002A1102 /* Phase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

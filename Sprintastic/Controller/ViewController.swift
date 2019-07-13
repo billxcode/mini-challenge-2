@@ -15,7 +15,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var constanImageView: UIImageView!
     @IBOutlet weak var finishImageView: UIImageView!
     @IBOutlet weak var exerciseImageView: UIImageView!
-    var bill = 0
+    
+    var phaseData = Phase()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -23,19 +25,41 @@ class ViewController: UIViewController {
     }
     
     @IBAction func startPhaseTapped(_ sender: UITapGestureRecognizer) {
-        performSegue(withIdentifier: "goToStartPhase", sender: self)
+        checkPhase(sender: sender.view!.tag)
+        performSegue(withIdentifier: "goToPhase", sender: self)
     }
-    @IBAction func accelerationPhaseTapped(_ sender: UITapGestureRecognizer) {
-        performSegue(withIdentifier: "goToAccelerationPhase", sender: self)
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! PhaseDetailViewController
+        vc.phaseData = phaseData
     }
-    @IBAction func constantPhaseTapped(_ sender: UITapGestureRecognizer) {
-        performSegue(withIdentifier: "goToConstantPhase", sender: self)
-    }
-    @IBAction func finishPhaseTapped(_ sender: UITapGestureRecognizer) {
-        performSegue(withIdentifier: "goToFinishPhase", sender: self)
-    }
-    @IBAction func exerciseTapped(_ sender: UITapGestureRecognizer) {
-        performSegue(withIdentifier: "goToExercisePhase", sender: self)
+    
+    func checkPhase(sender:Int){
+        phaseData.titleRules = "Rules"
+        phaseData.titleSupporting = "Supporting"
+        phaseData.descriptionSupporting = "ini deskripsi supporting"
+        switch sender {
+        case 0:
+            phaseData.titlePhase = "Starting Block"
+            phaseData.descriptionPhase = "Deskripsi judul fase"
+            phaseData.descriptionRules = "ini deskripsi rules"
+        case 1:
+            phaseData.titlePhase = "Acceleration"
+            phaseData.descriptionPhase = "Deskripsi judul fase"
+            phaseData.descriptionRules = "ini deskripsi rules"
+        case 2:
+            phaseData.titlePhase = "Constant"
+            phaseData.descriptionPhase = "Deskripsi judul fase"
+            phaseData.descriptionRules = "ini deskripsi rules"
+        case 3:
+            phaseData.titlePhase = "finish"
+            phaseData.descriptionPhase = "Deskripsi judul fase"
+            phaseData.descriptionRules = "ini deskripsi rules"
+        default:
+            phaseData.titlePhase = "Starting Block"
+            phaseData.descriptionPhase = "Deskripsi judul fase"
+            phaseData.descriptionRules = "ini deskripsi rules"
+        }
     }
 }
 
