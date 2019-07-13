@@ -18,6 +18,8 @@
 		099EBF0922D892DE00D3658F /* ConstantPhaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099EBF0822D892DE00D3658F /* ConstantPhaseViewController.swift */; };
 		099EBF0B22D892F200D3658F /* FinishPhaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099EBF0A22D892F200D3658F /* FinishPhaseViewController.swift */; };
 		099EBF0D22D8933800D3658F /* ExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099EBF0C22D8933800D3658F /* ExerciseViewController.swift */; };
+		099EBF0F22D8B42200D3658F /* cataclysmo.regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 099EBF0E22D8B42200D3658F /* cataclysmo.regular.otf */; };
+		099EBF1222D8BA1B00D3658F /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099EBF1122D8BA1B00D3658F /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		099EBF0822D892DE00D3658F /* ConstantPhaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantPhaseViewController.swift; sourceTree = "<group>"; };
 		099EBF0A22D892F200D3658F /* FinishPhaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishPhaseViewController.swift; sourceTree = "<group>"; };
 		099EBF0C22D8933800D3658F /* ExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseViewController.swift; sourceTree = "<group>"; };
+		099EBF0E22D8B42200D3658F /* cataclysmo.regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = cataclysmo.regular.otf; sourceTree = "<group>"; };
+		099EBF1122D8BA1B00D3658F /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,7 @@
 				099EBEFF22D878F800D3658F /* View */,
 				099EBF0122D8790D00D3658F /* Supporting Files */,
 				099EBEF922D86B8A00D3658F /* Info.plist */,
+				099EBF1022D8B43900D3658F /* font */,
 				099EBEED22D86B8900D3658F /* AppDelegate.swift */,
 			);
 			path = Sprintastic;
@@ -94,6 +99,7 @@
 				099EBF0822D892DE00D3658F /* ConstantPhaseViewController.swift */,
 				099EBF0A22D892F200D3658F /* FinishPhaseViewController.swift */,
 				099EBF0C22D8933800D3658F /* ExerciseViewController.swift */,
+				099EBF1122D8BA1B00D3658F /* CustomButton.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -104,6 +110,14 @@
 				099EBEF422D86B8A00D3658F /* Assets.xcassets */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		099EBF1022D8B43900D3658F /* font */ = {
+			isa = PBXGroup;
+			children = (
+				099EBF0E22D8B42200D3658F /* cataclysmo.regular.otf */,
+			);
+			path = font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				099EBEF822D86B8A00D3658F /* LaunchScreen.storyboard in Resources */,
+				099EBF0F22D8B42200D3658F /* cataclysmo.regular.otf in Resources */,
 				099EBEF522D86B8A00D3658F /* Assets.xcassets in Resources */,
 				099EBEF322D86B8900D3658F /* Main.storyboard in Resources */,
 			);
@@ -179,6 +194,7 @@
 			files = (
 				099EBF0922D892DE00D3658F /* ConstantPhaseViewController.swift in Sources */,
 				099EBF0322D8795600D3658F /* CustomActivitiesImageView.swift in Sources */,
+				099EBF1222D8BA1B00D3658F /* CustomButton.swift in Sources */,
 				099EBF0B22D892F200D3658F /* FinishPhaseViewController.swift in Sources */,
 				099EBEF022D86B8900D3658F /* ViewController.swift in Sources */,
 				099EBEEE22D86B8900D3658F /* AppDelegate.swift in Sources */,

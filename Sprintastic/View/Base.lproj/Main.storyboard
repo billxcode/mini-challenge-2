@@ -9,6 +9,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="cataclysmo.regular.otf">
+            <string>Cataclysmo</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Activities-->
         <scene sceneID="tne-QT-ifu">
@@ -18,55 +23,82 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="start" translatesAutoresizingMaskIntoConstraints="NO" id="WWD-Me-9G6" customClass="CustomActivitiesImageView" customModule="Sprintastic" customModuleProvider="target">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="start" translatesAutoresizingMaskIntoConstraints="NO" id="WWD-Me-9G6" customClass="CustomActivitiesImageView" customModule="Sprintastic" customModuleProvider="target">
                                 <rect key="frame" x="20" y="162" width="175" height="175"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="175" id="6kd-cj-MrI"/>
+                                    <constraint firstAttribute="height" constant="175" id="aSN-kv-Day"/>
+                                </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="PtV-NX-sNC" appends="YES" id="1z6-19-61V"/>
                                 </connections>
                             </imageView>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="start" translatesAutoresizingMaskIntoConstraints="NO" id="gwR-Ca-NaK" customClass="CustomActivitiesImageView" customModule="Sprintastic" customModuleProvider="target">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="start" translatesAutoresizingMaskIntoConstraints="NO" id="gwR-Ca-NaK" customClass="CustomActivitiesImageView" customModule="Sprintastic" customModuleProvider="target">
                                 <rect key="frame" x="20" y="358" width="175" height="175"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="175" id="ErQ-al-hQP"/>
+                                    <constraint firstAttribute="width" constant="175" id="HHb-31-6C3"/>
+                                </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="Mgm-55-0g5" appends="YES" id="KD4-XK-Sxb"/>
                                 </connections>
                             </imageView>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="start" translatesAutoresizingMaskIntoConstraints="NO" id="V6C-hP-ASn" customClass="CustomActivitiesImageView" customModule="Sprintastic" customModuleProvider="target">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="start" translatesAutoresizingMaskIntoConstraints="NO" id="V6C-hP-ASn" customClass="CustomActivitiesImageView" customModule="Sprintastic" customModuleProvider="target">
                                 <rect key="frame" x="219" y="358" width="175" height="175"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="175" id="E9i-QL-nAd"/>
+                                    <constraint firstAttribute="height" constant="175" id="J3N-tR-UcB"/>
+                                </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="vox-8B-yIe" appends="YES" id="N2c-ko-n4j"/>
                                 </connections>
                             </imageView>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="acceleration" translatesAutoresizingMaskIntoConstraints="NO" id="ktg-eb-7dL" customClass="CustomActivitiesImageView" customModule="Sprintastic" customModuleProvider="target">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="acceleration" translatesAutoresizingMaskIntoConstraints="NO" id="ktg-eb-7dL" customClass="CustomActivitiesImageView" customModule="Sprintastic" customModuleProvider="target">
                                 <rect key="frame" x="219" y="162" width="175" height="175"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="175" id="9MV-9f-NF7"/>
+                                    <constraint firstAttribute="width" constant="175" id="Xty-Ql-2T9"/>
+                                </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="b8c-fm-lUp" appends="YES" id="WL4-GI-GB5"/>
                                 </connections>
                             </imageView>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="start" translatesAutoresizingMaskIntoConstraints="NO" id="EnO-vu-4tU" customClass="CustomActivitiesImageView" customModule="Sprintastic" customModuleProvider="target">
-                                <rect key="frame" x="21" y="554" width="373" height="175"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="Zlg-3Q-Zdv" appends="YES" id="eOe-ON-liT"/>
-                                </connections>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="V6C-hP-ASn" firstAttribute="width" secondItem="WWD-Me-9G6" secondAttribute="width" id="038-fa-3ec"/>
+                            <constraint firstItem="gwR-Ca-NaK" firstAttribute="width" secondItem="WWD-Me-9G6" secondAttribute="width" id="1bE-vl-jSG"/>
+                            <constraint firstItem="ktg-eb-7dL" firstAttribute="width" secondItem="WWD-Me-9G6" secondAttribute="width" id="28a-Dh-igJ"/>
+                            <constraint firstItem="ktg-eb-7dL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="22" id="7U2-tH-tYv"/>
+                            <constraint firstItem="gwR-Ca-NaK" firstAttribute="height" secondItem="WWD-Me-9G6" secondAttribute="height" id="CTO-Va-Iby"/>
+                            <constraint firstItem="V6C-hP-ASn" firstAttribute="top" secondItem="ktg-eb-7dL" secondAttribute="bottom" constant="21" id="Fvv-if-5pG"/>
+                            <constraint firstItem="ktg-eb-7dL" firstAttribute="leading" secondItem="WWD-Me-9G6" secondAttribute="trailing" constant="24" id="GZi-mU-cMq"/>
+                            <constraint firstItem="V6C-hP-ASn" firstAttribute="leading" secondItem="gwR-Ca-NaK" secondAttribute="trailing" constant="24" id="IVk-fp-Y0M"/>
+                            <constraint firstItem="gwR-Ca-NaK" firstAttribute="top" secondItem="WWD-Me-9G6" secondAttribute="bottom" constant="21" id="J0v-P3-MkB"/>
+                            <constraint firstItem="ktg-eb-7dL" firstAttribute="height" secondItem="WWD-Me-9G6" secondAttribute="height" id="PCR-pV-XuK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ktg-eb-7dL" secondAttribute="trailing" constant="20" id="Shj-oX-w8y"/>
+                            <constraint firstItem="gwR-Ca-NaK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="TIh-6S-Vyu"/>
+                            <constraint firstItem="V6C-hP-ASn" firstAttribute="top" secondItem="ktg-eb-7dL" secondAttribute="bottom" constant="21" id="YFU-la-A3A"/>
+                            <constraint firstItem="gwR-Ca-NaK" firstAttribute="top" secondItem="WWD-Me-9G6" secondAttribute="bottom" constant="21" id="ZyV-DZ-GJb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="V6C-hP-ASn" secondAttribute="trailing" constant="20" id="aRy-Mb-unI"/>
+                            <constraint firstItem="V6C-hP-ASn" firstAttribute="height" secondItem="WWD-Me-9G6" secondAttribute="height" id="cE3-5K-6C9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gwR-Ca-NaK" secondAttribute="bottom" constant="329" id="gMl-w4-UJD"/>
+                            <constraint firstItem="V6C-hP-ASn" firstAttribute="leading" secondItem="gwR-Ca-NaK" secondAttribute="trailing" constant="24" id="jEB-co-E0Y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="V6C-hP-ASn" secondAttribute="bottom" constant="329" id="o8g-a1-uWS"/>
+                            <constraint firstItem="WWD-Me-9G6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="pxj-Jl-h0b"/>
+                            <constraint firstItem="ktg-eb-7dL" firstAttribute="leading" secondItem="WWD-Me-9G6" secondAttribute="trailing" constant="24" id="vPv-Y8-Inb"/>
+                            <constraint firstItem="WWD-Me-9G6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="22" id="vUj-fA-gmc"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Activities" id="KEv-It-TIV"/>
                     <connections>
                         <outlet property="accelerationImageView" destination="ktg-eb-7dL" id="lWQ-kJ-h1j"/>
                         <outlet property="constanImageView" destination="gwR-Ca-NaK" id="lyn-V9-MI5"/>
-                        <outlet property="exerciseImageView" destination="EnO-vu-4tU" id="zbH-9n-fiv"/>
                         <outlet property="finishImageView" destination="V6C-hP-ASn" id="RCY-hg-FNk"/>
                         <outlet property="startImageView" destination="WWD-Me-9G6" id="BaR-P9-EQB"/>
                         <segue destination="0yv-6h-PB5" kind="show" identifier="goToStartPhase" id="1Mj-0a-eWc"/>
@@ -112,15 +144,6 @@
                     <view key="view" contentMode="scaleToFill" id="s7b-L6-9Ip">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q6a-9f-Oyd">
-                                <rect key="frame" x="159" y="288" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="908-Wp-eEh"/>
                     </view>
@@ -181,13 +204,82 @@
                     <view key="view" contentMode="scaleToFill" id="o9t-8h-EJi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sKq-Pg-N47">
+                                <rect key="frame" x="0.0" y="140" width="414" height="175"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nGl-HT-DYN">
+                                <rect key="frame" x="20" y="373" width="374" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6OQ-sB-G5c">
+                                <rect key="frame" x="20" y="436" width="374" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Starting block" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ttn-c0-0Jy">
+                                <rect key="frame" x="20" y="323" width="374" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Cataclysmo" family="Cataclysmo" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rules" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e3z-zw-RJ4">
+                                <rect key="frame" x="20" y="382" width="374" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Cataclysmo" family="Cataclysmo" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Supporting" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2eM-Fg-K4I">
+                                <rect key="frame" x="20" y="445" width="374" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Cataclysmo" family="Cataclysmo" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7hT-mK-nWF">
+                                <rect key="frame" x="20" y="342" width="374" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">the initial phase of sprinting where the sprinting is in contact with the blocks. starting block phase consists of ready, set, and go! stage</string>
+                                <fontDescription key="fontDescription" name="Cataclysmo" family="Cataclysmo" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gd5-UX-sCf">
+                                <rect key="frame" x="20" y="401" width="374" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Cataclysmo" family="Cataclysmo" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="thW-Xk-o3q">
+                                <rect key="frame" x="20" y="465" width="374" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Cataclysmo" family="Cataclysmo" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yUC-vx-Ztj" customClass="CustomButton" customModule="Sprintastic" customModuleProvider="target">
+                                <rect key="frame" x="20" y="612" width="374" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.75294117647058822" green="0.22352941176470587" blue="0.16862745098039217" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Cataclysmo" family="Cataclysmo" pointSize="17"/>
+                                <state key="normal" title="Start Practicing">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Y5J-z4-CeQ"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Al-QM-B3S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1861" y="-1432"/>
+            <point key="canvasLocation" x="1860.8695652173915" y="-1432.3660714285713"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="A03-qh-k1y">
@@ -199,6 +291,9 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fqV-GY-YOb">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="po0-VF-ZRe"/>
                     </connections>
