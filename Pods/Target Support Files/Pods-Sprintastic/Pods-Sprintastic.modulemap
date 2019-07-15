@@ -1,0 +1,6 @@
+framework module Pods_Sprintastic {
+  umbrella header "Pods-Sprintastic-umbrella.h"
+
+  export *
+  module * { export * }
+}

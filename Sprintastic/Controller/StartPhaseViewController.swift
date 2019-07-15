@@ -9,11 +9,14 @@
 import UIKit
 
 class StartPhaseViewController: UIViewController {
-
+    @IBOutlet weak var phaseTitle: UILabel!
+    var phaseData = Phase()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        phaseTitle.text = phaseData.titlePhase
     }
     
 
