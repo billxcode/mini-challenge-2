@@ -19,6 +19,7 @@ class CustomActivitiesImageView: UIImageView {
     */
     override func awakeFromNib() {
         layer.cornerRadius = 18
+
     }
 
 }

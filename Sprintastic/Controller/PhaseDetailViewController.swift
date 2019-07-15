@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import YoutubePlayer_in_WKWebView
 
 class PhaseDetailViewController: UIViewController {
 
-    @IBOutlet weak var tutorialVideoView: UIView!
+   
+    @IBOutlet weak var tutorialVideoView: WKYTPlayerView!
     @IBOutlet weak var titlePhaseLabel: UILabel!
     @IBOutlet weak var descriptionPhaseLabel: UILabel!
     @IBOutlet weak var titleRulesLabel: UILabel!
@@ -23,6 +25,7 @@ class PhaseDetailViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        tutorialVideoView.load(withVideoId: "rJ0BRPgUxb8")
         titlePhaseLabel.text = phaseData.titlePhase
         descriptionPhaseLabel.text = phaseData.descriptionPhase
         titleRulesLabel.text = phaseData.titleRules

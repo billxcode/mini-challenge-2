@@ -17,6 +17,7 @@
 		099EBF0322D8795600D3658F /* CustomActivitiesImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099EBF0222D8795600D3658F /* CustomActivitiesImageView.swift */; };
 		099EBF0F22D8B42200D3658F /* cataclysmo.regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 099EBF0E22D8B42200D3658F /* cataclysmo.regular.otf */; };
 		099EBF1222D8BA1B00D3658F /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099EBF1122D8BA1B00D3658F /* CustomButton.swift */; };
+		BF60D5B5C8CA3B793E4011E5 /* Pods_Sprintastic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7701DD83314579D653223A23 /* Pods_Sprintastic.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,9 @@
 		099EBF0222D8795600D3658F /* CustomActivitiesImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomActivitiesImageView.swift; sourceTree = "<group>"; };
 		099EBF0E22D8B42200D3658F /* cataclysmo.regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = cataclysmo.regular.otf; sourceTree = "<group>"; };
 		099EBF1122D8BA1B00D3658F /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		7701DD83314579D653223A23 /* Pods_Sprintastic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sprintastic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B917BD0C039853B4C343625 /* Pods-Sprintastic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sprintastic.release.xcconfig"; path = "Target Support Files/Pods-Sprintastic/Pods-Sprintastic.release.xcconfig"; sourceTree = "<group>"; };
+		CBD90CA234068C5963645176 /* Pods-Sprintastic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sprintastic.debug.xcconfig"; path = "Target Support Files/Pods-Sprintastic/Pods-Sprintastic.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF60D5B5C8CA3B793E4011E5 /* Pods_Sprintastic.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +63,8 @@
 			children = (
 				099EBEEC22D86B8900D3658F /* Sprintastic */,
 				099EBEEB22D86B8900D3658F /* Products */,
+				8F2C24C7EF4D52BD5EF4A0CA /* Pods */,
+				EBF0F9CC0376DF8FB6E79C84 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,12 +79,12 @@
 		099EBEEC22D86B8900D3658F /* Sprintastic */ = {
 			isa = PBXGroup;
 			children = (
+				099EBEED22D86B8900D3658F /* AppDelegate.swift */,
+				099EBEF922D86B8A00D3658F /* Info.plist */,
 				099EBF0022D8790000D3658F /* Controller */,
 				099EBEFF22D878F800D3658F /* View */,
 				099EBF0122D8790D00D3658F /* Supporting Files */,
-				099EBEF922D86B8A00D3658F /* Info.plist */,
 				099EBF1022D8B43900D3658F /* font */,
-				099EBEED22D86B8900D3658F /* AppDelegate.swift */,
 				0983BDD122DA1D0F002A1102 /* Model */,
 			);
 			path = Sprintastic;
@@ -119,6 +126,23 @@
 			path = font;
 			sourceTree = "<group>";
 		};
+		8F2C24C7EF4D52BD5EF4A0CA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CBD90CA234068C5963645176 /* Pods-Sprintastic.debug.xcconfig */,
+				9B917BD0C039853B4C343625 /* Pods-Sprintastic.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EBF0F9CC0376DF8FB6E79C84 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7701DD83314579D653223A23 /* Pods_Sprintastic.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +150,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 099EBEFC22D86B8A00D3658F /* Build configuration list for PBXNativeTarget "Sprintastic" */;
 			buildPhases = (
+				5ED5684436FC34362D35A75F /* [CP] Check Pods Manifest.lock */,
 				099EBEE622D86B8900D3658F /* Sources */,
 				099EBEE722D86B8900D3658F /* Frameworks */,
 				099EBEE822D86B8900D3658F /* Resources */,
+				11BC09A220889E71CE0F5A2F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -185,6 +211,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		11BC09A220889E71CE0F5A2F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sprintastic/Pods-Sprintastic-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/YoutubePlayer-in-WKWebView/YoutubePlayer_in_WKWebView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YoutubePlayer_in_WKWebView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sprintastic/Pods-Sprintastic-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5ED5684436FC34362D35A75F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sprintastic-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		099EBEE622D86B8900D3658F /* Sources */ = {
@@ -340,6 +413,7 @@
 		};
 		099EBEFD22D86B8A00D3658F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBD90CA234068C5963645176 /* Pods-Sprintastic.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -358,6 +432,7 @@
 		};
 		099EBEFE22D86B8A00D3658F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B917BD0C039853B4C343625 /* Pods-Sprintastic.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

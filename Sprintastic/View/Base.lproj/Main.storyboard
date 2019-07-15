@@ -136,7 +136,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sKq-Pg-N47">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sKq-Pg-N47" customClass="WKYTPlayerView">
                                 <rect key="frame" x="0.0" y="140" width="414" height="175"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -175,21 +175,21 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7hT-mK-nWF">
                                 <rect key="frame" x="20" y="342" width="374" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Cataclysmo" family="Cataclysmo" pointSize="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gd5-UX-sCf">
                                 <rect key="frame" x="20" y="401" width="374" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Cataclysmo" family="Cataclysmo" pointSize="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="thW-Xk-o3q">
                                 <rect key="frame" x="20" y="465" width="374" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Cataclysmo" family="Cataclysmo" pointSize="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -210,11 +210,10 @@
                         <outlet property="descriptionPhaseLabel" destination="7hT-mK-nWF" id="UM9-wr-1Ee"/>
                         <outlet property="descriptionRulesLabel" destination="Gd5-UX-sCf" id="Yoi-de-xQk"/>
                         <outlet property="descriptionSupportingLabel" destination="thW-Xk-o3q" id="Ree-bn-OCg"/>
-                        <outlet property="phaseTitle" destination="Ttn-c0-0Jy" id="qeK-EN-COl"/>
                         <outlet property="titlePhaseLabel" destination="Ttn-c0-0Jy" id="4qb-Oh-1P1"/>
                         <outlet property="titleRulesLabel" destination="e3z-zw-RJ4" id="rmM-ao-Euf"/>
                         <outlet property="titleSupportingLabel" destination="2eM-Fg-K4I" id="PsU-Sk-WTU"/>
-                        <outlet property="tutorialVideoView" destination="sKq-Pg-N47" id="5a2-wz-Vdo"/>
+                        <outlet property="tutorialVideoView" destination="sKq-Pg-N47" id="FCV-b2-wf6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Al-QM-B3S" userLabel="First Responder" sceneMemberID="firstResponder"/>
