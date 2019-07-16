@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		0983BDD022DA1D0A002A1102 /* Phase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0983BDCF22DA1D0A002A1102 /* Phase.swift */; };
 		0983BDD322DA26E8002A1102 /* PhaseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0983BDD222DA26E8002A1102 /* PhaseDetailViewController.swift */; };
+		099AB43822DDB1E20041E10B /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099AB43722DDB1E20041E10B /* CameraViewController.swift */; };
+		099AB43A22DDB30D0041E10B /* model_cpm.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 099AB43922DDB30D0041E10B /* model_cpm.mlmodel */; };
+		099AB43C22DDB51E0041E10B /* VideoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099AB43B22DDB51E0041E10B /* VideoCapture.swift */; };
+		099AB43E22DDB5910041E10B /* PredictedPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099AB43D22DDB5910041E10B /* PredictedPoint.swift */; };
+		099AB44022DDB7F70041E10B /* MovingAverageFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099AB43F22DDB7F70041E10B /* MovingAverageFilter.swift */; };
+		099AB44222DDB8790041E10B /* HeatmapPostProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099AB44122DDB8790041E10B /* HeatmapPostProcessor.swift */; };
+		099AB44422DDBA1E0041E10B /* DrawingCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099AB44322DDBA1E0041E10B /* DrawingCameraView.swift */; };
+		099AB44622DDC3250041E10B /* Measure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099AB44522DDC3250041E10B /* Measure.swift */; };
 		099EBEEE22D86B8900D3658F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099EBEED22D86B8900D3658F /* AppDelegate.swift */; };
 		099EBEF022D86B8900D3658F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099EBEEF22D86B8900D3658F /* ViewController.swift */; };
 		099EBEF322D86B8900D3658F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 099EBEF122D86B8900D3658F /* Main.storyboard */; };
@@ -23,6 +31,14 @@
 /* Begin PBXFileReference section */
 		0983BDCF22DA1D0A002A1102 /* Phase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Phase.swift; sourceTree = "<group>"; };
 		0983BDD222DA26E8002A1102 /* PhaseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhaseDetailViewController.swift; sourceTree = "<group>"; };
+		099AB43722DDB1E20041E10B /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		099AB43922DDB30D0041E10B /* model_cpm.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = model_cpm.mlmodel; sourceTree = "<group>"; };
+		099AB43B22DDB51E0041E10B /* VideoCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCapture.swift; sourceTree = "<group>"; };
+		099AB43D22DDB5910041E10B /* PredictedPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictedPoint.swift; sourceTree = "<group>"; };
+		099AB43F22DDB7F70041E10B /* MovingAverageFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovingAverageFilter.swift; sourceTree = "<group>"; };
+		099AB44122DDB8790041E10B /* HeatmapPostProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeatmapPostProcessor.swift; sourceTree = "<group>"; };
+		099AB44322DDBA1E0041E10B /* DrawingCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingCameraView.swift; sourceTree = "<group>"; };
+		099AB44522DDC3250041E10B /* Measure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Measure.swift; sourceTree = "<group>"; };
 		099EBEEA22D86B8900D3658F /* Sprintastic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sprintastic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		099EBEED22D86B8900D3658F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		099EBEEF22D86B8900D3658F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				0983BDCF22DA1D0A002A1102 /* Phase.swift */,
+				099AB43D22DDB5910041E10B /* PredictedPoint.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -79,6 +96,7 @@
 		099EBEEC22D86B8900D3658F /* Sprintastic */ = {
 			isa = PBXGroup;
 			children = (
+				099AB43922DDB30D0041E10B /* model_cpm.mlmodel */,
 				099EBEED22D86B8900D3658F /* AppDelegate.swift */,
 				099EBEF922D86B8A00D3658F /* Info.plist */,
 				099EBF0022D8790000D3658F /* Controller */,
@@ -106,6 +124,12 @@
 				099EBF0222D8795600D3658F /* CustomActivitiesImageView.swift */,
 				099EBF1122D8BA1B00D3658F /* CustomButton.swift */,
 				0983BDD222DA26E8002A1102 /* PhaseDetailViewController.swift */,
+				099AB43722DDB1E20041E10B /* CameraViewController.swift */,
+				099AB43B22DDB51E0041E10B /* VideoCapture.swift */,
+				099AB43F22DDB7F70041E10B /* MovingAverageFilter.swift */,
+				099AB44122DDB8790041E10B /* HeatmapPostProcessor.swift */,
+				099AB44322DDBA1E0041E10B /* DrawingCameraView.swift */,
+				099AB44522DDC3250041E10B /* Measure.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -264,10 +288,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				099AB44622DDC3250041E10B /* Measure.swift in Sources */,
 				099EBF0322D8795600D3658F /* CustomActivitiesImageView.swift in Sources */,
+				099AB43E22DDB5910041E10B /* PredictedPoint.swift in Sources */,
+				099AB43A22DDB30D0041E10B /* model_cpm.mlmodel in Sources */,
+				099AB44222DDB8790041E10B /* HeatmapPostProcessor.swift in Sources */,
+				099AB44422DDBA1E0041E10B /* DrawingCameraView.swift in Sources */,
 				0983BDD322DA26E8002A1102 /* PhaseDetailViewController.swift in Sources */,
 				099EBF1222D8BA1B00D3658F /* CustomButton.swift in Sources */,
+				099AB43C22DDB51E0041E10B /* VideoCapture.swift in Sources */,
+				099AB44022DDB7F70041E10B /* MovingAverageFilter.swift in Sources */,
 				099EBEF022D86B8900D3658F /* ViewController.swift in Sources */,
+				099AB43822DDB1E20041E10B /* CameraViewController.swift in Sources */,
 				099EBEEE22D86B8900D3658F /* AppDelegate.swift in Sources */,
 				0983BDD022DA1D0A002A1102 /* Phase.swift in Sources */,
 			);
