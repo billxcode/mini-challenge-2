@@ -1,2 +1,2 @@
-# mini-challenge-2
+# Mini Challenge 2
 this repository use to complete academy challenge
