@@ -23,6 +23,7 @@ class PhaseDetailViewController: UIViewController {
     var phaseData = Phase()
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view.
         tutorialVideoView.load(withVideoId: "rJ0BRPgUxb8")
         titlePhaseLabel.text = phaseData.titlePhase
