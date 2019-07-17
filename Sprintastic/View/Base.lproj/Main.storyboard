@@ -31,10 +31,10 @@
                                     <constraint firstAttribute="height" constant="175" id="aSN-kv-Day"/>
                                 </constraints>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="PtV-NX-sNC" appends="YES" id="1z6-19-61V"/>
+                                    <outletCollection property="gestureRecognizers" destination="uJt-YX-bQ0" appends="YES" id="kUE-Dg-sF5"/>
                                 </connections>
                             </imageView>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="start" translatesAutoresizingMaskIntoConstraints="NO" id="gwR-Ca-NaK" customClass="CustomActivitiesImageView" customModule="Sprintastic" customModuleProvider="target">
+                            <imageView clipsSubviews="YES" tag="2" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="start" translatesAutoresizingMaskIntoConstraints="NO" id="gwR-Ca-NaK" customClass="CustomActivitiesImageView" customModule="Sprintastic" customModuleProvider="target">
                                 <rect key="frame" x="20" y="358" width="175" height="175"/>
                                 <gestureRecognizers/>
                                 <constraints>
@@ -42,10 +42,10 @@
                                     <constraint firstAttribute="width" constant="175" id="HHb-31-6C3"/>
                                 </constraints>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="Mgm-55-0g5" appends="YES" id="KD4-XK-Sxb"/>
+                                    <outletCollection property="gestureRecognizers" destination="JW2-eX-3Ud" appends="YES" id="oht-VU-orT"/>
                                 </connections>
                             </imageView>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="start" translatesAutoresizingMaskIntoConstraints="NO" id="V6C-hP-ASn" customClass="CustomActivitiesImageView" customModule="Sprintastic" customModuleProvider="target">
+                            <imageView clipsSubviews="YES" tag="3" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="start" translatesAutoresizingMaskIntoConstraints="NO" id="V6C-hP-ASn" customClass="CustomActivitiesImageView" customModule="Sprintastic" customModuleProvider="target">
                                 <rect key="frame" x="219" y="358" width="175" height="175"/>
                                 <gestureRecognizers/>
                                 <constraints>
@@ -53,10 +53,10 @@
                                     <constraint firstAttribute="height" constant="175" id="J3N-tR-UcB"/>
                                 </constraints>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="vox-8B-yIe" appends="YES" id="N2c-ko-n4j"/>
+                                    <outletCollection property="gestureRecognizers" destination="1UJ-mk-ynN" appends="YES" id="wNV-Kt-pwF"/>
                                 </connections>
                             </imageView>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="acceleration" translatesAutoresizingMaskIntoConstraints="NO" id="ktg-eb-7dL" customClass="CustomActivitiesImageView" customModule="Sprintastic" customModuleProvider="target">
+                            <imageView clipsSubviews="YES" tag="1" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="acceleration" translatesAutoresizingMaskIntoConstraints="NO" id="ktg-eb-7dL" customClass="CustomActivitiesImageView" customModule="Sprintastic" customModuleProvider="target">
                                 <rect key="frame" x="219" y="162" width="175" height="175"/>
                                 <gestureRecognizers/>
                                 <constraints>
@@ -64,9 +64,37 @@
                                     <constraint firstAttribute="width" constant="175" id="Xty-Ql-2T9"/>
                                 </constraints>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="b8c-fm-lUp" appends="YES" id="WL4-GI-GB5"/>
+                                    <outletCollection property="gestureRecognizers" destination="a2z-Hq-AlD" appends="YES" id="Sne-ce-ap4"/>
                                 </connections>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Starting Block" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="InW-YB-hhv">
+                                <rect key="frame" x="72" y="305" width="71" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Cataclysmo" family="Cataclysmo" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Acceleration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EeE-Ro-raM">
+                                <rect key="frame" x="276" y="305" width="61" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Cataclysmo" family="Cataclysmo" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Constant" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PKi-od-1gX">
+                                <rect key="frame" x="85" y="500" width="44" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Cataclysmo" family="Cataclysmo" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FINISH" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E2f-3N-DZX">
+                                <rect key="frame" x="292" y="500" width="28" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Cataclysmo" family="Cataclysmo" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -101,185 +129,202 @@
                         <outlet property="constanImageView" destination="gwR-Ca-NaK" id="lyn-V9-MI5"/>
                         <outlet property="finishImageView" destination="V6C-hP-ASn" id="RCY-hg-FNk"/>
                         <outlet property="startImageView" destination="WWD-Me-9G6" id="BaR-P9-EQB"/>
-                        <segue destination="0yv-6h-PB5" kind="show" identifier="goToStartPhase" id="1Mj-0a-eWc"/>
-                        <segue destination="Tzj-fI-gRq" kind="show" identifier="goToAccelerationPhase" id="c0o-H8-UG5"/>
-                        <segue destination="DDa-gW-80c" kind="show" identifier="goToConstantPhase" id="5tX-4a-p3L"/>
-                        <segue destination="12b-EK-dqI" kind="show" identifier="goToFinishPhase" id="i1a-MC-Imq"/>
-                        <segue destination="qFE-1e-ICk" kind="show" identifier="goToExercisePhase" id="WBl-U2-2bd"/>
+                        <segue destination="0yv-6h-PB5" kind="show" identifier="goToPhase" id="1Mj-0a-eWc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="PtV-NX-sNC" userLabel="Start Phase Tap Gesture Recognizer">
+                <tapGestureRecognizer id="uJt-YX-bQ0">
                     <connections>
-                        <action selector="startPhaseTapped:" destination="BYZ-38-t0r" id="c9g-36-S97"/>
+                        <action selector="startPhaseTapped:" destination="BYZ-38-t0r" id="d2s-45-gOR"/>
                     </connections>
                 </tapGestureRecognizer>
-                <tapGestureRecognizer id="b8c-fm-lUp" userLabel="Acceleration Tap Gesture Recognizer">
+                <tapGestureRecognizer id="a2z-Hq-AlD">
                     <connections>
-                        <action selector="accelerationPhaseTapped:" destination="BYZ-38-t0r" id="aBo-7u-EK7"/>
+                        <action selector="startPhaseTapped:" destination="BYZ-38-t0r" id="4ax-GL-CnE"/>
                     </connections>
                 </tapGestureRecognizer>
-                <tapGestureRecognizer id="Mgm-55-0g5" userLabel="Constant Phase Tap Gesture Recognizer">
+                <tapGestureRecognizer id="JW2-eX-3Ud">
                     <connections>
-                        <action selector="constantPhaseTapped:" destination="BYZ-38-t0r" id="om6-1O-tcp"/>
+                        <action selector="startPhaseTapped:" destination="BYZ-38-t0r" id="ql1-qw-pYg"/>
                     </connections>
                 </tapGestureRecognizer>
-                <tapGestureRecognizer id="vox-8B-yIe" userLabel="Finish Phase Tap Gesture Recognizer">
+                <tapGestureRecognizer id="1UJ-mk-ynN">
                     <connections>
-                        <action selector="finishPhaseTapped:" destination="BYZ-38-t0r" id="LAJ-a6-UsS"/>
-                    </connections>
-                </tapGestureRecognizer>
-                <tapGestureRecognizer id="Zlg-3Q-Zdv" userLabel="Exercise Tap Gesture Recognizer">
-                    <connections>
-                        <action selector="exerciseTapped:" destination="BYZ-38-t0r" id="a6j-U0-S8c"/>
+                        <action selector="startPhaseTapped:" destination="BYZ-38-t0r" id="X03-Wg-FbC"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="970" y="-544"/>
         </scene>
-        <!--Acceleration Phase View Controller-->
-        <scene sceneID="6Cf-uN-H7p">
-            <objects>
-                <viewController id="Tzj-fI-gRq" customClass="AccelerationPhaseViewController" customModule="Sprintastic" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="s7b-L6-9Ip">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="908-Wp-eEh"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="N2V-kL-eTo" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1861" y="-777"/>
-        </scene>
-        <!--Constant Phase View Controller-->
-        <scene sceneID="pOs-cf-h5n">
-            <objects>
-                <viewController id="DDa-gW-80c" customClass="ConstantPhaseViewController" customModule="Sprintastic" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="DYX-YM-uR6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="V2u-Zt-9oJ"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="TSk-pf-qqg" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1861" y="-131"/>
-        </scene>
-        <!--Exercise View Controller-->
-        <scene sceneID="H4c-hC-l0r">
-            <objects>
-                <viewController id="qFE-1e-ICk" customClass="ExerciseViewController" customModule="Sprintastic" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="vZu-Df-zLH">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="FbB-lS-nIF"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Mgb-Ue-S77" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1861" y="1202"/>
-        </scene>
-        <!--Finish Phase View Controller-->
-        <scene sceneID="Btj-3D-8y9">
-            <objects>
-                <viewController id="12b-EK-dqI" customClass="FinishPhaseViewController" customModule="Sprintastic" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ue8-WQ-027">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="5JM-vH-cXS"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HfZ-kH-5Q2" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1861" y="527"/>
-        </scene>
-        <!--Start Phase View Controller-->
+        <!--Phase Detail View Controller-->
         <scene sceneID="Ee4-K8-zof">
             <objects>
-                <viewController id="0yv-6h-PB5" customClass="StartPhaseViewController" customModule="Sprintastic" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="0yv-6h-PB5" customClass="PhaseDetailViewController" customModule="Sprintastic" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="o9t-8h-EJi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sKq-Pg-N47">
-                                <rect key="frame" x="0.0" y="140" width="414" height="175"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sKq-Pg-N47" customClass="WKYTPlayerView">
+                                <rect key="frame" x="0.0" y="140" width="414" height="200"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="HUg-PA-Jhd"/>
+                                    <constraint firstAttribute="width" constant="414" id="jYS-8E-IKS"/>
+                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nGl-HT-DYN">
-                                <rect key="frame" x="20" y="373" width="374" height="1"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nGl-HT-DYN">
+                                <rect key="frame" x="10" y="414.5" width="404" height="1"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="Yjs-88-kXi"/>
+                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6OQ-sB-G5c">
-                                <rect key="frame" x="20" y="436" width="374" height="1"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Starting block" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ttn-c0-0Jy">
-                                <rect key="frame" x="20" y="323" width="374" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Cataclysmo" family="Cataclysmo" pointSize="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ttn-c0-0Jy">
+                                <rect key="frame" x="10" y="360" width="394" height="20"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rules" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e3z-zw-RJ4">
-                                <rect key="frame" x="20" y="382" width="374" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Cataclysmo" family="Cataclysmo" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rules" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e3z-zw-RJ4">
+                                <rect key="frame" x="10" y="435.5" width="394" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Supporting" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2eM-Fg-K4I">
-                                <rect key="frame" x="20" y="445" width="374" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Cataclysmo" family="Cataclysmo" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Supporting" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2eM-Fg-K4I">
+                                <rect key="frame" x="10" y="510.5" width="394" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7hT-mK-nWF">
-                                <rect key="frame" x="20" y="342" width="374" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">the initial phase of sprinting where the sprinting is in contact with the blocks. starting block phase consists of ready, set, and go! stage</string>
-                                <fontDescription key="fontDescription" name="Cataclysmo" family="Cataclysmo" pointSize="12"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7hT-mK-nWF">
+                                <rect key="frame" x="10" y="390" width="394" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gd5-UX-sCf">
-                                <rect key="frame" x="20" y="401" width="374" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Cataclysmo" family="Cataclysmo" pointSize="12"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gd5-UX-sCf">
+                                <rect key="frame" x="10" y="465" width="394" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="thW-Xk-o3q">
-                                <rect key="frame" x="20" y="465" width="374" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Cataclysmo" family="Cataclysmo" pointSize="12"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="thW-Xk-o3q">
+                                <rect key="frame" x="10" y="540" width="394" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yUC-vx-Ztj" customClass="CustomButton" customModule="Sprintastic" customModuleProvider="target">
-                                <rect key="frame" x="20" y="612" width="374" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yUC-vx-Ztj" customClass="CustomButton" customModule="Sprintastic" customModuleProvider="target">
+                                <rect key="frame" x="20" y="584.5" width="374" height="50"/>
                                 <color key="backgroundColor" red="0.75294117647058822" green="0.22352941176470587" blue="0.16862745098039217" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Cataclysmo" family="Cataclysmo" pointSize="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Enn-p5-0Vq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
                                 <state key="normal" title="Start Practicing">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="XjE-bx-B8r" kind="show" identifier="goToCamera" id="fum-Nq-8pr"/>
+                                </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6OQ-sB-G5c">
+                                <rect key="frame" x="10" y="489.5" width="404" height="1"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="a9V-qO-5B4"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Y5J-z4-CeQ" firstAttribute="trailing" secondItem="thW-Xk-o3q" secondAttribute="trailing" constant="10" id="0iR-t4-wd6"/>
+                            <constraint firstItem="Ttn-c0-0Jy" firstAttribute="leading" secondItem="Y5J-z4-CeQ" secondAttribute="leading" constant="10" id="2Wm-rS-fxr"/>
+                            <constraint firstItem="e3z-zw-RJ4" firstAttribute="top" secondItem="nGl-HT-DYN" secondAttribute="bottom" constant="20" id="2yG-JI-hz2"/>
+                            <constraint firstItem="2eM-Fg-K4I" firstAttribute="top" secondItem="6OQ-sB-G5c" secondAttribute="bottom" constant="20" id="4dm-Mo-3g0"/>
+                            <constraint firstItem="yUC-vx-Ztj" firstAttribute="leading" secondItem="Y5J-z4-CeQ" secondAttribute="leading" constant="20" id="501-Zf-5gX"/>
+                            <constraint firstItem="Y5J-z4-CeQ" firstAttribute="trailing" secondItem="7hT-mK-nWF" secondAttribute="trailing" constant="10" id="71m-Ix-u7e"/>
+                            <constraint firstAttribute="trailing" secondItem="nGl-HT-DYN" secondAttribute="trailing" id="9Nt-gM-9MD"/>
+                            <constraint firstItem="yUC-vx-Ztj" firstAttribute="top" secondItem="thW-Xk-o3q" secondAttribute="bottom" constant="30" id="Cgt-jG-d5m"/>
+                            <constraint firstItem="e3z-zw-RJ4" firstAttribute="leading" secondItem="Y5J-z4-CeQ" secondAttribute="leading" constant="10" id="FVm-l7-KeG"/>
+                            <constraint firstItem="Y5J-z4-CeQ" firstAttribute="trailing" secondItem="yUC-vx-Ztj" secondAttribute="trailing" constant="20" id="Fzj-hV-Qdl"/>
+                            <constraint firstItem="sKq-Pg-N47" firstAttribute="leading" secondItem="Y5J-z4-CeQ" secondAttribute="leading" id="JSF-EW-QJw"/>
+                            <constraint firstItem="2eM-Fg-K4I" firstAttribute="leading" secondItem="Y5J-z4-CeQ" secondAttribute="leading" constant="10" id="LCG-ql-pep"/>
+                            <constraint firstItem="Gd5-UX-sCf" firstAttribute="leading" secondItem="Y5J-z4-CeQ" secondAttribute="leading" constant="10" id="N17-69-QFh"/>
+                            <constraint firstItem="thW-Xk-o3q" firstAttribute="top" secondItem="2eM-Fg-K4I" secondAttribute="bottom" constant="10" id="Q5f-Vt-Ltl"/>
+                            <constraint firstItem="Ttn-c0-0Jy" firstAttribute="top" secondItem="sKq-Pg-N47" secondAttribute="bottom" constant="20" id="QVs-SO-8ae"/>
+                            <constraint firstItem="7hT-mK-nWF" firstAttribute="leading" secondItem="Y5J-z4-CeQ" secondAttribute="leading" constant="10" id="SPd-Jt-BRZ"/>
+                            <constraint firstItem="6OQ-sB-G5c" firstAttribute="top" secondItem="Gd5-UX-sCf" secondAttribute="bottom" constant="10" id="V1N-q7-ptx"/>
+                            <constraint firstItem="Y5J-z4-CeQ" firstAttribute="trailing" secondItem="e3z-zw-RJ4" secondAttribute="trailing" constant="10" id="WUa-Xs-vwx"/>
+                            <constraint firstItem="7hT-mK-nWF" firstAttribute="top" secondItem="Ttn-c0-0Jy" secondAttribute="bottom" constant="10" id="aMR-4C-kcU"/>
+                            <constraint firstItem="Y5J-z4-CeQ" firstAttribute="trailing" secondItem="Ttn-c0-0Jy" secondAttribute="trailing" constant="10" id="cAq-qk-uMM"/>
+                            <constraint firstItem="sKq-Pg-N47" firstAttribute="trailing" secondItem="Y5J-z4-CeQ" secondAttribute="trailing" id="fcm-pU-3b5"/>
+                            <constraint firstItem="Gd5-UX-sCf" firstAttribute="top" secondItem="e3z-zw-RJ4" secondAttribute="bottom" constant="10" id="g6G-pK-zFh"/>
+                            <constraint firstItem="nGl-HT-DYN" firstAttribute="top" secondItem="7hT-mK-nWF" secondAttribute="bottom" constant="10" id="gPM-JY-DhP"/>
+                            <constraint firstItem="Y5J-z4-CeQ" firstAttribute="trailing" secondItem="Gd5-UX-sCf" secondAttribute="trailing" constant="10" id="hXT-UK-Wdk"/>
+                            <constraint firstAttribute="trailing" secondItem="6OQ-sB-G5c" secondAttribute="trailing" id="pcd-UG-cL3"/>
+                            <constraint firstItem="Y5J-z4-CeQ" firstAttribute="trailing" secondItem="2eM-Fg-K4I" secondAttribute="trailing" constant="10" id="uOI-Ce-sG2"/>
+                            <constraint firstItem="sKq-Pg-N47" firstAttribute="top" secondItem="Y5J-z4-CeQ" secondAttribute="top" id="uUK-nO-DKd"/>
+                            <constraint firstItem="thW-Xk-o3q" firstAttribute="leading" secondItem="Y5J-z4-CeQ" secondAttribute="leading" constant="10" id="wRe-Kn-K5i"/>
+                            <constraint firstItem="6OQ-sB-G5c" firstAttribute="leading" secondItem="o9t-8h-EJi" secondAttribute="leading" constant="10" id="y7k-fb-OEe"/>
+                            <constraint firstItem="nGl-HT-DYN" firstAttribute="leading" secondItem="o9t-8h-EJi" secondAttribute="leading" constant="10" id="yfO-KI-8Y4"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Y5J-z4-CeQ"/>
                     </view>
+                    <connections>
+                        <outlet property="descriptionPhaseLabel" destination="7hT-mK-nWF" id="UM9-wr-1Ee"/>
+                        <outlet property="descriptionRulesLabel" destination="Gd5-UX-sCf" id="Yoi-de-xQk"/>
+                        <outlet property="descriptionSupportingLabel" destination="thW-Xk-o3q" id="Ree-bn-OCg"/>
+                        <outlet property="titlePhaseLabel" destination="Ttn-c0-0Jy" id="4qb-Oh-1P1"/>
+                        <outlet property="titleRulesLabel" destination="e3z-zw-RJ4" id="rmM-ao-Euf"/>
+                        <outlet property="titleSupportingLabel" destination="2eM-Fg-K4I" id="PsU-Sk-WTU"/>
+                        <outlet property="tutorialVideoView" destination="sKq-Pg-N47" id="FCV-b2-wf6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Al-QM-B3S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1860.8695652173915" y="-1432.3660714285713"/>
+            <point key="canvasLocation" x="1760.8695652173915" y="-544.41964285714278"/>
+        </scene>
+        <!--Camera View Controller-->
+        <scene sceneID="8Fd-YU-Yqm">
+            <objects>
+                <viewController id="XjE-bx-B8r" customClass="CameraViewController" customModule="Sprintastic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uIP-Qn-Xw4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dK4-14-jAV" customClass="DrawingCameraView" customModule="Sprintastic" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="140" width="414" height="756"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="H5M-j2-qg3"/>
+                                    <constraint firstAttribute="height" constant="756" id="jaG-Hp-K07"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FBE-Te-FyG" customClass="DrawingCameraView" customModule="Sprintastic" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="70" width="414" height="756"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="dK4-14-jAV" secondAttribute="bottom" id="3VM-wi-CJd"/>
+                            <constraint firstItem="dK4-14-jAV" firstAttribute="trailing" secondItem="dGL-J4-jIR" secondAttribute="trailing" id="LL2-9z-ZUp"/>
+                            <constraint firstItem="dK4-14-jAV" firstAttribute="top" secondItem="dGL-J4-jIR" secondAttribute="top" id="tIA-9Q-vOy"/>
+                            <constraint firstItem="dK4-14-jAV" firstAttribute="leading" secondItem="dGL-J4-jIR" secondAttribute="leading" id="zOL-Lg-ymF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dGL-J4-jIR"/>
+                    </view>
+                    <connections>
+                        <outlet property="cameraView" destination="FBE-Te-FyG" id="HTW-W1-xBG"/>
+                        <outlet property="videoPreview" destination="dK4-14-jAV" id="Zdc-JC-R4n"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pog-q8-vPN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2618.840579710145" y="-544.41964285714278"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="A03-qh-k1y">

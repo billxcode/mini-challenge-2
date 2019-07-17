@@ -1,0 +1,619 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1BBC582FCEA1B2926269F3CCE3F1D923 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		34DBC6E8739546E0B693171A48DE4BF6 /* Pods-Sprintastic-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C9CBB9DC3B240C0F33501BBEAFFFAF /* Pods-Sprintastic-dummy.m */; };
+		3A7E8ACA580FEE571BAD3221DBDBE118 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		4BBBDD52873061AC9A8355C11FCA5B44 /* YoutubePlayer-in-WKWebView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1EE9B7060F10507AB79214957DE146 /* YoutubePlayer-in-WKWebView-dummy.m */; };
+		803A943F40E9733AC61489FB25186CF9 /* YoutubePlayer-in-WKWebView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9148B6B8D7184C7C910A7578F8671685 /* YoutubePlayer-in-WKWebView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89DF443FDD5C46D9D1CC47A5C2EB8C5E /* Pods-Sprintastic-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EDAF64354272BCA3A70682E37982125 /* Pods-Sprintastic-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AD84D555FE3F3C4519344CBBAB1D565 /* WKYTPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C2C92BB7DDC17915FF28A029F18130 /* WKYTPlayerView.m */; };
+		CCF11406FC25C84082E70B3DE2871690 /* WKYTPlayerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 158814EAEF2AA7E7ACA32043557997DD /* WKYTPlayerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D334D5A0AA88F6DEE11C8667AAE43596 /* WKYTPlayerView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D45E0C906890686D770071E3F267394C /* WKYTPlayerView.bundle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		526668C4EFE539E4B5D5F65B1C1A99D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DABE3AD6EBA3822D4F04FBC550E7158D;
+			remoteInfo = "YoutubePlayer-in-WKWebView";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		10F4D3E553A3BB1ACE70B4B5CA9801A9 /* Pods-Sprintastic.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Sprintastic.modulemap"; sourceTree = "<group>"; };
+		158814EAEF2AA7E7ACA32043557997DD /* WKYTPlayerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WKYTPlayerView.h; path = WKYTPlayerView/WKYTPlayerView.h; sourceTree = "<group>"; };
+		2E9F580E0097FDA073836D06C095E28E /* Pods_Sprintastic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Sprintastic.framework; path = "Pods-Sprintastic.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		35C9CBB9DC3B240C0F33501BBEAFFFAF /* Pods-Sprintastic-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Sprintastic-dummy.m"; sourceTree = "<group>"; };
+		41CB874BD3D8EB9036BDE74CAE3EE609 /* Pods-Sprintastic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sprintastic.release.xcconfig"; sourceTree = "<group>"; };
+		4AB190FEACD060F452C4CD5B7CE13DAA /* Pods-Sprintastic-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Sprintastic-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7EDAF64354272BCA3A70682E37982125 /* Pods-Sprintastic-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Sprintastic-umbrella.h"; sourceTree = "<group>"; };
+		88C2C92BB7DDC17915FF28A029F18130 /* WKYTPlayerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WKYTPlayerView.m; path = WKYTPlayerView/WKYTPlayerView.m; sourceTree = "<group>"; };
+		9148B6B8D7184C7C910A7578F8671685 /* YoutubePlayer-in-WKWebView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YoutubePlayer-in-WKWebView-umbrella.h"; sourceTree = "<group>"; };
+		953D3D08F45393461F457A1EC3594A42 /* Pods-Sprintastic-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Sprintastic-Info.plist"; sourceTree = "<group>"; };
+		965D60F2F3EC242D5E7B46E28328D76A /* YoutubePlayer-in-WKWebView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YoutubePlayer-in-WKWebView-prefix.pch"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AB1EE9B7060F10507AB79214957DE146 /* YoutubePlayer-in-WKWebView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YoutubePlayer-in-WKWebView-dummy.m"; sourceTree = "<group>"; };
+		B608737059EDE1E4C237BB0950574878 /* Pods-Sprintastic-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Sprintastic-frameworks.sh"; sourceTree = "<group>"; };
+		C5D0E1D6F68A4742F5D1157B65EA5C98 /* YoutubePlayer-in-WKWebView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "YoutubePlayer-in-WKWebView-Info.plist"; sourceTree = "<group>"; };
+		D00EE8FB7AEDEC0FFCC62CA1B90C8010 /* YoutubePlayer-in-WKWebView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "YoutubePlayer-in-WKWebView.xcconfig"; sourceTree = "<group>"; };
+		D22896C213408A2160E69567FFD6BC8E /* Pods-Sprintastic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sprintastic.debug.xcconfig"; sourceTree = "<group>"; };
+		D45E0C906890686D770071E3F267394C /* WKYTPlayerView.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = WKYTPlayerView.bundle; path = WKYTPlayerView/WKYTPlayerView.bundle; sourceTree = "<group>"; };
+		DBCFAEBEA27A590F6A2338B13A82C80B /* Pods-Sprintastic-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Sprintastic-acknowledgements.plist"; sourceTree = "<group>"; };
+		DE0FAB1DA724AB86C0E299518F5E580A /* YoutubePlayer_in_WKWebView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YoutubePlayer_in_WKWebView.framework; path = "YoutubePlayer-in-WKWebView.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD64B190B67BDAB0692FC8236296B99C /* YoutubePlayer-in-WKWebView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "YoutubePlayer-in-WKWebView.modulemap"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		190DFD2BACF04EE082E6F2265129D9D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A7E8ACA580FEE571BAD3221DBDBE118 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83B31952B9520750E964E0A44C07C4B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BBC582FCEA1B2926269F3CCE3F1D923 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0EB33744E052DC603B73CD5BBD689072 /* Pods-Sprintastic */ = {
+			isa = PBXGroup;
+			children = (
+				10F4D3E553A3BB1ACE70B4B5CA9801A9 /* Pods-Sprintastic.modulemap */,
+				4AB190FEACD060F452C4CD5B7CE13DAA /* Pods-Sprintastic-acknowledgements.markdown */,
+				DBCFAEBEA27A590F6A2338B13A82C80B /* Pods-Sprintastic-acknowledgements.plist */,
+				35C9CBB9DC3B240C0F33501BBEAFFFAF /* Pods-Sprintastic-dummy.m */,
+				B608737059EDE1E4C237BB0950574878 /* Pods-Sprintastic-frameworks.sh */,
+				953D3D08F45393461F457A1EC3594A42 /* Pods-Sprintastic-Info.plist */,
+				7EDAF64354272BCA3A70682E37982125 /* Pods-Sprintastic-umbrella.h */,
+				D22896C213408A2160E69567FFD6BC8E /* Pods-Sprintastic.debug.xcconfig */,
+				41CB874BD3D8EB9036BDE74CAE3EE609 /* Pods-Sprintastic.release.xcconfig */,
+			);
+			name = "Pods-Sprintastic";
+			path = "Target Support Files/Pods-Sprintastic";
+			sourceTree = "<group>";
+		};
+		35F3E83EA10A9DD56DFE59438D4044C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2E9F580E0097FDA073836D06C095E28E /* Pods_Sprintastic.framework */,
+				DE0FAB1DA724AB86C0E299518F5E580A /* YoutubePlayer_in_WKWebView.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		49AE3566D9DAC22AD399C49EC523D64D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AAAA31A5C7782BB86B3BB1EB150609ED /* YoutubePlayer-in-WKWebView */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		631A4EDBD5F5F3F6E0B2E98A0CAD6E27 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FD64B190B67BDAB0692FC8236296B99C /* YoutubePlayer-in-WKWebView.modulemap */,
+				D00EE8FB7AEDEC0FFCC62CA1B90C8010 /* YoutubePlayer-in-WKWebView.xcconfig */,
+				AB1EE9B7060F10507AB79214957DE146 /* YoutubePlayer-in-WKWebView-dummy.m */,
+				C5D0E1D6F68A4742F5D1157B65EA5C98 /* YoutubePlayer-in-WKWebView-Info.plist */,
+				965D60F2F3EC242D5E7B46E28328D76A /* YoutubePlayer-in-WKWebView-prefix.pch */,
+				9148B6B8D7184C7C910A7578F8671685 /* YoutubePlayer-in-WKWebView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/YoutubePlayer-in-WKWebView";
+			sourceTree = "<group>";
+		};
+		A0C98DE340FB510B3FC001EC726AE66E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D45E0C906890686D770071E3F267394C /* WKYTPlayerView.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		AAAA31A5C7782BB86B3BB1EB150609ED /* YoutubePlayer-in-WKWebView */ = {
+			isa = PBXGroup;
+			children = (
+				158814EAEF2AA7E7ACA32043557997DD /* WKYTPlayerView.h */,
+				88C2C92BB7DDC17915FF28A029F18130 /* WKYTPlayerView.m */,
+				A0C98DE340FB510B3FC001EC726AE66E /* Resources */,
+				631A4EDBD5F5F3F6E0B2E98A0CAD6E27 /* Support Files */,
+			);
+			name = "YoutubePlayer-in-WKWebView";
+			path = "YoutubePlayer-in-WKWebView";
+			sourceTree = "<group>";
+		};
+		B25F039F3509EEFD67C36CA379A17FC0 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0EB33744E052DC603B73CD5BBD689072 /* Pods-Sprintastic */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				49AE3566D9DAC22AD399C49EC523D64D /* Pods */,
+				35F3E83EA10A9DD56DFE59438D4044C7 /* Products */,
+				B25F039F3509EEFD67C36CA379A17FC0 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		17828FFF5E257528483A782A6C37CA18 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCF11406FC25C84082E70B3DE2871690 /* WKYTPlayerView.h in Headers */,
+				803A943F40E9733AC61489FB25186CF9 /* YoutubePlayer-in-WKWebView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEDDC1291412EC699F520DAEE73E4696 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89DF443FDD5C46D9D1CC47A5C2EB8C5E /* Pods-Sprintastic-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		AE8F93F2C126CC0B4A6F3154E14681EC /* Pods-Sprintastic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03F13886DEBB9CF3F35B52537DF2ABF2 /* Build configuration list for PBXNativeTarget "Pods-Sprintastic" */;
+			buildPhases = (
+				CEDDC1291412EC699F520DAEE73E4696 /* Headers */,
+				F6F2D965A3CA9C58DE55FD387C32441F /* Sources */,
+				190DFD2BACF04EE082E6F2265129D9D8 /* Frameworks */,
+				B44748DA41C1A4218FEEB11EF5F3522A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEE83942E1D48D77E99D308A2E788B20 /* PBXTargetDependency */,
+			);
+			name = "Pods-Sprintastic";
+			productName = "Pods-Sprintastic";
+			productReference = 2E9F580E0097FDA073836D06C095E28E /* Pods_Sprintastic.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DABE3AD6EBA3822D4F04FBC550E7158D /* YoutubePlayer-in-WKWebView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 047221B88B466188D7B28CF17DB79C8D /* Build configuration list for PBXNativeTarget "YoutubePlayer-in-WKWebView" */;
+			buildPhases = (
+				17828FFF5E257528483A782A6C37CA18 /* Headers */,
+				DC2087E01AAFD2B9411B8C3022709F9A /* Sources */,
+				83B31952B9520750E964E0A44C07C4B5 /* Frameworks */,
+				8175522B524A37D3936801F6C2DE743F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "YoutubePlayer-in-WKWebView";
+			productName = "YoutubePlayer-in-WKWebView";
+			productReference = DE0FAB1DA724AB86C0E299518F5E580A /* YoutubePlayer_in_WKWebView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 35F3E83EA10A9DD56DFE59438D4044C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE8F93F2C126CC0B4A6F3154E14681EC /* Pods-Sprintastic */,
+				DABE3AD6EBA3822D4F04FBC550E7158D /* YoutubePlayer-in-WKWebView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8175522B524A37D3936801F6C2DE743F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D334D5A0AA88F6DEE11C8667AAE43596 /* WKYTPlayerView.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B44748DA41C1A4218FEEB11EF5F3522A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC2087E01AAFD2B9411B8C3022709F9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AD84D555FE3F3C4519344CBBAB1D565 /* WKYTPlayerView.m in Sources */,
+				4BBBDD52873061AC9A8355C11FCA5B44 /* YoutubePlayer-in-WKWebView-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6F2D965A3CA9C58DE55FD387C32441F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34DBC6E8739546E0B693171A48DE4BF6 /* Pods-Sprintastic-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BEE83942E1D48D77E99D308A2E788B20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "YoutubePlayer-in-WKWebView";
+			target = DABE3AD6EBA3822D4F04FBC550E7158D /* YoutubePlayer-in-WKWebView */;
+			targetProxy = 526668C4EFE539E4B5D5F65B1C1A99D7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		06AD062DD0EC5DB45509187C4C50F276 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D22896C213408A2160E69567FFD6BC8E /* Pods-Sprintastic.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Sprintastic/Pods-Sprintastic-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Sprintastic/Pods-Sprintastic.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		204B8AEA4AE90A551A1768B355C2F9F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		3CCC6195EDBEE5DA2A49DF962113BE16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		B9E917D8D278734790F65416F37DF51E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41CB874BD3D8EB9036BDE74CAE3EE609 /* Pods-Sprintastic.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Sprintastic/Pods-Sprintastic-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Sprintastic/Pods-Sprintastic.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C283CCE0FDEDC41C8F0F0FB568F14500 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D00EE8FB7AEDEC0FFCC62CA1B90C8010 /* YoutubePlayer-in-WKWebView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/YoutubePlayer-in-WKWebView/YoutubePlayer-in-WKWebView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YoutubePlayer-in-WKWebView/YoutubePlayer-in-WKWebView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/YoutubePlayer-in-WKWebView/YoutubePlayer-in-WKWebView.modulemap";
+				PRODUCT_MODULE_NAME = YoutubePlayer_in_WKWebView;
+				PRODUCT_NAME = YoutubePlayer_in_WKWebView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C388FB829F42D2C5EDBFE005872CC531 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D00EE8FB7AEDEC0FFCC62CA1B90C8010 /* YoutubePlayer-in-WKWebView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/YoutubePlayer-in-WKWebView/YoutubePlayer-in-WKWebView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YoutubePlayer-in-WKWebView/YoutubePlayer-in-WKWebView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/YoutubePlayer-in-WKWebView/YoutubePlayer-in-WKWebView.modulemap";
+				PRODUCT_MODULE_NAME = YoutubePlayer_in_WKWebView;
+				PRODUCT_NAME = YoutubePlayer_in_WKWebView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03F13886DEBB9CF3F35B52537DF2ABF2 /* Build configuration list for PBXNativeTarget "Pods-Sprintastic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06AD062DD0EC5DB45509187C4C50F276 /* Debug */,
+				B9E917D8D278734790F65416F37DF51E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		047221B88B466188D7B28CF17DB79C8D /* Build configuration list for PBXNativeTarget "YoutubePlayer-in-WKWebView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C283CCE0FDEDC41C8F0F0FB568F14500 /* Debug */,
+				C388FB829F42D2C5EDBFE005872CC531 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				204B8AEA4AE90A551A1768B355C2F9F0 /* Debug */,
+				3CCC6195EDBEE5DA2A49DF962113BE16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
