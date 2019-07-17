@@ -37,7 +37,7 @@
                                                         <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         <gestureRecognizers/>
                                                         <connections>
-                                                            <outletCollection property="gestureRecognizers" destination="MzP-eZ-dLk" appends="YES" id="127-8e-ZhS"/>
+                                                            <outletCollection property="gestureRecognizers" destination="ub6-CV-X0S" appends="YES" id="O9u-dQ-KId"/>
                                                         </connections>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Starting Block" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f4Q-8p-FKy">
@@ -75,12 +75,12 @@
                                                             <constraint firstAttribute="width" constant="175" id="Xty-Ql-2T9"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U6D-xG-m2F" customClass="CustomUIView" customModule="Sprintastic" customModuleProvider="target">
+                                                    <view alpha="0.5" tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U6D-xG-m2F" customClass="CustomUIView" customModule="Sprintastic" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="175" height="175"/>
                                                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         <gestureRecognizers/>
                                                         <connections>
-                                                            <outletCollection property="gestureRecognizers" destination="aVI-iw-OxZ" appends="YES" id="ynm-IV-PC4"/>
+                                                            <outletCollection property="gestureRecognizers" destination="JBC-bu-Mpn" appends="YES" id="8Wk-Dk-HIE"/>
                                                         </connections>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Acceleration" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="53N-V0-Wmb">
@@ -123,12 +123,12 @@
                                                             <constraint firstAttribute="width" constant="175" id="HHb-31-6C3"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RYp-hY-nbo" customClass="CustomUIView" customModule="Sprintastic" customModuleProvider="target">
+                                                    <view alpha="0.5" tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RYp-hY-nbo" customClass="CustomUIView" customModule="Sprintastic" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="175" height="175"/>
                                                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         <gestureRecognizers/>
                                                         <connections>
-                                                            <outletCollection property="gestureRecognizers" destination="Wmj-NW-qxz" appends="YES" id="xtE-kZ-BtM"/>
+                                                            <outletCollection property="gestureRecognizers" destination="eBM-lH-dww" appends="YES" id="fMI-Uv-ifz"/>
                                                         </connections>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Constant Speed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jwF-QX-anE">
@@ -166,12 +166,12 @@
                                                             <constraint firstAttribute="height" constant="175" id="J3N-tR-UcB"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="91X-zt-5fr" customClass="CustomUIView" customModule="Sprintastic" customModuleProvider="target">
+                                                    <view alpha="0.5" tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="91X-zt-5fr" customClass="CustomUIView" customModule="Sprintastic" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="175" height="175"/>
                                                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         <gestureRecognizers/>
                                                         <connections>
-                                                            <outletCollection property="gestureRecognizers" destination="hhh-Wu-IDN" appends="YES" id="W5w-Mt-11i"/>
+                                                            <outletCollection property="gestureRecognizers" destination="55J-CG-lSU" appends="YES" id="sUQ-Yg-us1"/>
                                                         </connections>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Finishing" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IB2-qp-ooA">
@@ -224,24 +224,24 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="MzP-eZ-dLk">
+                <tapGestureRecognizer id="ub6-CV-X0S">
                     <connections>
-                        <action selector="startPhaseTapped:" destination="BYZ-38-t0r" id="7yc-YM-4eR"/>
+                        <action selector="startPhaseTapped:" destination="BYZ-38-t0r" id="sUx-jC-pWL"/>
                     </connections>
                 </tapGestureRecognizer>
-                <tapGestureRecognizer id="aVI-iw-OxZ">
+                <tapGestureRecognizer id="JBC-bu-Mpn">
                     <connections>
-                        <action selector="startPhaseTapped:" destination="BYZ-38-t0r" id="LhN-He-09L"/>
+                        <action selector="startPhaseTapped:" destination="BYZ-38-t0r" id="4j2-PJ-oy8"/>
                     </connections>
                 </tapGestureRecognizer>
-                <tapGestureRecognizer id="Wmj-NW-qxz">
+                <tapGestureRecognizer id="eBM-lH-dww">
                     <connections>
-                        <action selector="startPhaseTapped:" destination="BYZ-38-t0r" id="tz7-Ga-gQ1"/>
+                        <action selector="startPhaseTapped:" destination="BYZ-38-t0r" id="pOq-hq-AS1"/>
                     </connections>
                 </tapGestureRecognizer>
-                <tapGestureRecognizer id="hhh-Wu-IDN">
+                <tapGestureRecognizer id="55J-CG-lSU">
                     <connections>
-                        <action selector="startPhaseTapped:" destination="BYZ-38-t0r" id="jdR-af-2Yi"/>
+                        <action selector="startPhaseTapped:" destination="BYZ-38-t0r" id="31M-jX-AsJ"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
