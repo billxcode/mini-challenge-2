@@ -478,27 +478,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dK4-14-jAV" customClass="DrawingCameraView" customModule="Sprintastic" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="88" width="414" height="756"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dK4-14-jAV" customClass="DrawingCameraView" customModule="Sprintastic" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="414" id="H5M-j2-qg3"/>
-                                    <constraint firstAttribute="height" constant="756" id="jaG-Hp-K07"/>
-                                </constraints>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FBE-Te-FyG" customClass="DrawingCameraView" customModule="Sprintastic" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="70" width="414" height="756"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstAttribute="bottom" secondItem="dK4-14-jAV" secondAttribute="bottom" id="3VM-wi-CJd"/>
-                            <constraint firstItem="dK4-14-jAV" firstAttribute="trailing" secondItem="dGL-J4-jIR" secondAttribute="trailing" id="LL2-9z-ZUp"/>
-                            <constraint firstItem="dK4-14-jAV" firstAttribute="top" secondItem="dGL-J4-jIR" secondAttribute="top" id="tIA-9Q-vOy"/>
-                            <constraint firstItem="dK4-14-jAV" firstAttribute="leading" secondItem="dGL-J4-jIR" secondAttribute="leading" id="zOL-Lg-ymF"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="dGL-J4-jIR"/>
                     </view>
                     <connections>
