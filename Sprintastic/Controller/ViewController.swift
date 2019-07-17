@@ -14,7 +14,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var accelerationImageView: UIImageView!
     @IBOutlet weak var constanImageView: UIImageView!
     @IBOutlet weak var finishImageView: UIImageView!
-    @IBOutlet weak var exerciseImageView: UIImageView!
     
     var phaseData = Phase()
     
