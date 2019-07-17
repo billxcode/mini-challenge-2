@@ -25,6 +25,7 @@
 		099EBF0322D8795600D3658F /* CustomActivitiesImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099EBF0222D8795600D3658F /* CustomActivitiesImageView.swift */; };
 		099EBF0F22D8B42200D3658F /* cataclysmo.regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 099EBF0E22D8B42200D3658F /* cataclysmo.regular.otf */; };
 		099EBF1222D8BA1B00D3658F /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099EBF1122D8BA1B00D3658F /* CustomButton.swift */; };
+		B7B2DBF622DF0D61004C77FD /* ExerciseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B2DBF522DF0D61004C77FD /* ExerciseCollectionViewCell.swift */; };
 		B7CD1D3322DEAE690056F46C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CD1D3222DEAE690056F46C /* BaseViewController.swift */; };
 		B7CD1D3622DEB9010056F46C /* CustomUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CD1D3522DEB9010056F46C /* CustomUIView.swift */; };
 		BF60D5B5C8CA3B793E4011E5 /* Pods_Sprintastic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7701DD83314579D653223A23 /* Pods_Sprintastic.framework */; };
@@ -53,6 +54,7 @@
 		099EBF1122D8BA1B00D3658F /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		7701DD83314579D653223A23 /* Pods_Sprintastic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sprintastic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B917BD0C039853B4C343625 /* Pods-Sprintastic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sprintastic.release.xcconfig"; path = "Target Support Files/Pods-Sprintastic/Pods-Sprintastic.release.xcconfig"; sourceTree = "<group>"; };
+		B7B2DBF522DF0D61004C77FD /* ExerciseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCollectionViewCell.swift; sourceTree = "<group>"; };
 		B7CD1D3222DEAE690056F46C /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		B7CD1D3522DEB9010056F46C /* CustomUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIView.swift; sourceTree = "<group>"; };
 		CBD90CA234068C5963645176 /* Pods-Sprintastic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sprintastic.debug.xcconfig"; path = "Target Support Files/Pods-Sprintastic/Pods-Sprintastic.debug.xcconfig"; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 			children = (
 				0983BDCF22DA1D0A002A1102 /* Phase.swift */,
 				099AB43D22DDB5910041E10B /* PredictedPoint.swift */,
+				B7B2DBF522DF0D61004C77FD /* ExerciseCollectionViewCell.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 			files = (
 				099AB44622DDC3250041E10B /* Measure.swift in Sources */,
 				B7CD1D3622DEB9010056F46C /* CustomUIView.swift in Sources */,
+				B7B2DBF622DF0D61004C77FD /* ExerciseCollectionViewCell.swift in Sources */,
 				099EBF0322D8795600D3658F /* CustomActivitiesImageView.swift in Sources */,
 				099AB43E22DDB5910041E10B /* PredictedPoint.swift in Sources */,
 				099AB43A22DDB30D0041E10B /* model_cpm.mlmodel in Sources */,

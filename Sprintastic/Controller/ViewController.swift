@@ -8,7 +8,19 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return typeOfExcersise.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let data = collectionView.dequeueReusableCell(withReuseIdentifier: "excersiseCell", for: indexPath) as? ExerciseCollectionViewCell
+        data?.rangeTrack.text = typeOfExcersise[indexPath.row]
+        data?.backgroundImage.image = UIImage(named: background[indexPath.row])
+        return data!
+    }
+    
 
     @IBOutlet weak var startImageView: UIImageView!
     @IBOutlet weak var accelerationImageView: UIImageView!
@@ -17,9 +29,11 @@ class ViewController: UIViewController {
     
     var phaseData = Phase()
     
+    let typeOfExcersise = ["100M", "200M", "400M"]
+    let background = ["100M", "200M", "100M"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // Do any additional setup after loading the view.
     }
     
