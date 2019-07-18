@@ -408,7 +408,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="XjE-bx-B8r" kind="show" identifier="goToCamera" id="fum-Nq-8pr"/>
+                                            <segue destination="OFk-2Y-dX9" kind="show" identifier="ImageClassifier" id="gog-b3-x2g"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -474,12 +474,12 @@
         <scene sceneID="8Fd-YU-Yqm">
             <objects>
                 <viewController id="XjE-bx-B8r" customClass="CameraViewController" customModule="Sprintastic" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="uIP-Qn-Xw4">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="uIP-Qn-Xw4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dK4-14-jAV" customClass="DrawingCameraView" customModule="Sprintastic" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="88" width="414" height="756"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="756"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="414" id="H5M-j2-qg3"/>
@@ -509,6 +509,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pog-q8-vPN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2549" y="-544"/>
+        </scene>
+        <!--Image Clasifier View Controller-->
+        <scene sceneID="bG3-MP-Gz0">
+            <objects>
+                <viewController storyboardIdentifier="ImageClassifier" useStoryboardIdentifierAsRestorationIdentifier="YES" id="OFk-2Y-dX9" customClass="ImageClasifierViewController" customModule="Sprintastic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="E06-Q5-QAl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="GC2-H9-rsR"/>
+                    </view>
+                    <connections>
+                        <outlet property="superView" destination="E06-Q5-QAl" id="VXx-XR-DJI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KbB-Sa-pRw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1787" y="276"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="A03-qh-k1y">
