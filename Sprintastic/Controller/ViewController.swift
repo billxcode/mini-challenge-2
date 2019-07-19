@@ -50,28 +50,48 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     func checkPhase(sender:Int){
         phaseData.titleRules = "Rules"
         phaseData.titleSupporting = "Supporting"
-        phaseData.descriptionSupporting = "ini deskripsi supporting"
+        phaseData.descriptionSupporting = "If you have Apple watch, you could control our apps by your watch"
         switch sender {
         case 0:
             phaseData.titlePhase = "Starting Block"
-            phaseData.descriptionPhase = "Deskripsi judul fase"
-            phaseData.descriptionRules = "ini deskripsi rules"
+            phaseData.descriptionPhase = "Starting block consist of 3 phases, there are ready, set and go. in this activity you need to position your body to all that phases, and let this apps lead your phases until its clearly correct."
+            phaseData.descriptionRules = """
+            * put your phone in enjoyable place
+            * make sure your camera could capture your entire body
+            * you could control our apps using apple watch
+            """
         case 1:
             phaseData.titlePhase = "Acceleration"
-            phaseData.descriptionPhase = "Deskripsi judul fase"
-            phaseData.descriptionRules = "ini deskripsi rules"
+            phaseData.descriptionPhase = "Being able to accelerate quickly and powerfully is probably the most important skill that needs to be improved in all athletes. Athletes in every sport need to be able to run as fast as possible as quickly as possible. in this activity our apps will lead you to learn how to do the right acceleration"
+            phaseData.descriptionRules = """
+            * put your phone in enjoyable place
+            * make sure your camera could capture your entire body
+            * you could control our apps using apple watch
+            """
         case 2:
-            phaseData.titlePhase = "Constant"
-            phaseData.descriptionPhase = "Deskripsi judul fase"
-            phaseData.descriptionRules = "ini deskripsi rules"
+            phaseData.titlePhase = "Constant Speed"
+            phaseData.descriptionPhase = "The constant speed phase can be submaximal, maximal or supramaximal and is characterized by both the stride length and stride frequency remaining the same over a period of time. we will validate your body when doing constant speed to make sure your position is correct"
+            phaseData.descriptionRules = """
+            * put your phone in enjoyable place
+            * make sure your camera could capture your entire body
+            * you could control our apps using apple watch
+            """
         case 3:
-            phaseData.titlePhase = "finish"
-            phaseData.descriptionPhase = "Deskripsi judul fase"
-            phaseData.descriptionRules = "ini deskripsi rules"
+            phaseData.titlePhase = "Deceleration"
+            phaseData.descriptionPhase = "The last phase is categorized by a decrease in sprinting speed, usually occurring between the 80 and 100-meter mark in top sprinters. Velocity begins to decrease on a scale of .5 to 1.5 meters per second and is caused by central and peripheral fatigue."
+            phaseData.descriptionRules = """
+            * put your phone in enjoyable place
+            * make sure your camera could capture your entire body
+            * you could control our apps using apple watch
+            """
         default:
             phaseData.titlePhase = "Starting Block"
-            phaseData.descriptionPhase = "Deskripsi judul fase"
-            phaseData.descriptionRules = "ini deskripsi rules"
+            phaseData.descriptionPhase = "Starting block consist of 3 phases, there are ready, set and go. in this activity you need to position your body to all that phases, and let this apps lead your phases until its clearly correct."
+            phaseData.descriptionRules = """
+            * put your phone in enjoyable place
+            * make sure your camera could capture your entire body
+            * you could control our apps using apple watch
+            """
         }
     }
 }
