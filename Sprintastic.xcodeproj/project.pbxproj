@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0983BDD022DA1D0A002A1102 /* Phase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0983BDCF22DA1D0A002A1102 /* Phase.swift */; };
 		0983BDD322DA26E8002A1102 /* PhaseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0983BDD222DA26E8002A1102 /* PhaseDetailViewController.swift */; };
-		0986878A22E0C285008E6B6A /* ImageClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0986878922E0C285008E6B6A /* ImageClassifier.mlmodel */; };
 		099AB43822DDB1E20041E10B /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099AB43722DDB1E20041E10B /* CameraViewController.swift */; };
 		099AB43A22DDB30D0041E10B /* model_cpm.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 099AB43922DDB30D0041E10B /* model_cpm.mlmodel */; };
 		099AB43C22DDB51E0041E10B /* VideoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099AB43B22DDB51E0041E10B /* VideoCapture.swift */; };
@@ -30,13 +29,13 @@
 		B7B2DBF622DF0D61004C77FD /* ExerciseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B2DBF522DF0D61004C77FD /* ExerciseCollectionViewCell.swift */; };
 		B7CD1D3322DEAE690056F46C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CD1D3222DEAE690056F46C /* BaseViewController.swift */; };
 		B7CD1D3622DEB9010056F46C /* CustomUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CD1D3522DEB9010056F46C /* CustomUIView.swift */; };
+		B7E0C2F422E1E8C50042E1B3 /* ImageClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B7E0C2F322E1E8C50042E1B3 /* ImageClassifier.mlmodel */; };
 		BF60D5B5C8CA3B793E4011E5 /* Pods_Sprintastic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7701DD83314579D653223A23 /* Pods_Sprintastic.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0983BDCF22DA1D0A002A1102 /* Phase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Phase.swift; sourceTree = "<group>"; };
 		0983BDD222DA26E8002A1102 /* PhaseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhaseDetailViewController.swift; sourceTree = "<group>"; };
-		0986878922E0C285008E6B6A /* ImageClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = ImageClassifier.mlmodel; path = ../../../ImageClassifier.mlmodel; sourceTree = "<group>"; };
 		099AB43722DDB1E20041E10B /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		099AB43922DDB30D0041E10B /* model_cpm.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = model_cpm.mlmodel; sourceTree = "<group>"; };
 		099AB43B22DDB51E0041E10B /* VideoCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCapture.swift; sourceTree = "<group>"; };
@@ -61,6 +60,7 @@
 		B7B2DBF522DF0D61004C77FD /* ExerciseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCollectionViewCell.swift; sourceTree = "<group>"; };
 		B7CD1D3222DEAE690056F46C /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		B7CD1D3522DEB9010056F46C /* CustomUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIView.swift; sourceTree = "<group>"; };
+		B7E0C2F322E1E8C50042E1B3 /* ImageClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ImageClassifier.mlmodel; sourceTree = "<group>"; };
 		CBD90CA234068C5963645176 /* Pods-Sprintastic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sprintastic.debug.xcconfig"; path = "Target Support Files/Pods-Sprintastic/Pods-Sprintastic.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -141,8 +141,8 @@
 				099AB44322DDBA1E0041E10B /* DrawingCameraView.swift */,
 				099AB44522DDC3250041E10B /* Measure.swift */,
 				B7CD1D3222DEAE690056F46C /* BaseViewController.swift */,
+				B7E0C2F322E1E8C50042E1B3 /* ImageClassifier.mlmodel */,
 				B77B4A5422E0565A004DB80C /* ImageClasifierViewController.swift */,
-				0986878922E0C285008E6B6A /* ImageClassifier.mlmodel */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -324,7 +324,7 @@
 				099AB43822DDB1E20041E10B /* CameraViewController.swift in Sources */,
 				099EBEEE22D86B8900D3658F /* AppDelegate.swift in Sources */,
 				0983BDD022DA1D0A002A1102 /* Phase.swift in Sources */,
-				0986878A22E0C285008E6B6A /* ImageClassifier.mlmodel in Sources */,
+				B7E0C2F422E1E8C50042E1B3 /* ImageClassifier.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
