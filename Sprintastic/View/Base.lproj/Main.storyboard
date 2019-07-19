@@ -115,7 +115,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4f4-i0-3IA" customClass="CustomUIView" customModule="Sprintastic" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="175" height="175"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" tag="2" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="constant-speed" translatesAutoresizingMaskIntoConstraints="NO" id="gwR-Ca-NaK" customClass="CustomActivitiesImageView" customModule="Sprintastic" customModuleProvider="target">
+                                                    <imageView clipsSubviews="YES" tag="2" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="start" translatesAutoresizingMaskIntoConstraints="NO" id="gwR-Ca-NaK" customClass="CustomActivitiesImageView" customModule="Sprintastic" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="175" height="175"/>
                                                         <gestureRecognizers/>
                                                         <constraints>
@@ -158,7 +158,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pkZ-d8-b2y" customClass="CustomUIView" customModule="Sprintastic" customModuleProvider="target">
                                                 <rect key="frame" x="185" y="0.0" width="175" height="175"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" tag="3" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="finish" translatesAutoresizingMaskIntoConstraints="NO" id="V6C-hP-ASn" customClass="CustomActivitiesImageView" customModule="Sprintastic" customModuleProvider="target">
+                                                    <imageView clipsSubviews="YES" tag="3" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="start" translatesAutoresizingMaskIntoConstraints="NO" id="V6C-hP-ASn" customClass="CustomActivitiesImageView" customModule="Sprintastic" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="175" height="175"/>
                                                         <gestureRecognizers/>
                                                         <constraints>
@@ -174,7 +174,7 @@
                                                             <outletCollection property="gestureRecognizers" destination="55J-CG-lSU" appends="YES" id="sUQ-Yg-us1"/>
                                                         </connections>
                                                     </view>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deceleration" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IB2-qp-ooA">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Finishing" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IB2-qp-ooA">
                                                         <rect key="frame" x="10" y="134.5" width="155" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -474,30 +474,21 @@
         <scene sceneID="8Fd-YU-Yqm">
             <objects>
                 <viewController id="XjE-bx-B8r" customClass="CameraViewController" customModule="Sprintastic" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="uIP-Qn-Xw4">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="uIP-Qn-Xw4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dK4-14-jAV" customClass="DrawingCameraView" customModule="Sprintastic" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="756"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="414" id="H5M-j2-qg3"/>
-                                </constraints>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FBE-Te-FyG" customClass="DrawingCameraView" customModule="Sprintastic" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="70" width="414" height="756"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstAttribute="bottom" secondItem="dK4-14-jAV" secondAttribute="bottom" id="3VM-wi-CJd"/>
-                            <constraint firstItem="dK4-14-jAV" firstAttribute="trailing" secondItem="dGL-J4-jIR" secondAttribute="trailing" id="LL2-9z-ZUp"/>
-                            <constraint firstItem="dK4-14-jAV" firstAttribute="top" secondItem="dGL-J4-jIR" secondAttribute="top" id="tIA-9Q-vOy"/>
-                            <constraint firstItem="dK4-14-jAV" firstAttribute="leading" secondItem="dGL-J4-jIR" secondAttribute="leading" id="zOL-Lg-ymF"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="dGL-J4-jIR"/>
                     </view>
                     <connections>
@@ -525,7 +516,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KbB-Sa-pRw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1761" y="219"/>
+            <point key="canvasLocation" x="1787" y="276"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="A03-qh-k1y">
@@ -553,8 +544,6 @@
     </scenes>
     <resources>
         <image name="acceleration" width="1152" height="864"/>
-        <image name="constant-speed" width="2178" height="2178"/>
-        <image name="finish" width="870" height="562"/>
         <image name="start" width="870" height="580"/>
     </resources>
 </document>

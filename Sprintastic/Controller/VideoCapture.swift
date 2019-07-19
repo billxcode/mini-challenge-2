@@ -36,13 +36,7 @@ public class VideoCapture: NSObject {
         captureSession.beginConfiguration()
         captureSession.sessionPreset = sessionPreset
         
-        guard let captureDevice = AVCaptureDevice.default(.builtInWideAngleCamera,
-                                                          for: .video,
-                                                          position: .back) else {
-                                                            
-                                                            print("Error: no video devices available")
-                                                            return
-        }
+        guard let captureDevice = AVCaptureDevice.default(.builtInWideAngleCamera,for: .video,position: .front) else {return}
         
         guard let videoInput = try? AVCaptureDeviceInput(device: captureDevice) else {
             print("Error: could not create AVCaptureDeviceInput")
@@ -54,7 +48,7 @@ public class VideoCapture: NSObject {
         }
         
         let previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
-        previewLayer.videoGravity = AVLayerVideoGravity.resizeAspect
+        previewLayer.videoGravity = AVLayerVideoGravity.resizeAspectFill
         previewLayer.connection?.videoOrientation = .portrait
         self.previewLayer = previewLayer
         
