@@ -65,22 +65,23 @@ class ImageClasifierViewController: UIViewController, AVCaptureVideoDataOutputSa
     fileprivate func setupResult()
     {
         view.addSubview(uiResult)
-        view.addSubview(uiClose)
-        //        uiResult.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -32).isActive = true
-        let centerX = NSLayoutConstraint(item: uiResult, attribute: .centerX, relatedBy: .equal, toItem: superView , attribute: .centerX, multiplier: 1, constant: 0)
-        let centerY = NSLayoutConstraint(item: uiResult, attribute: .centerY, relatedBy: .equal, toItem: superView , attribute: .centerY, multiplier: 1, constant: 0)
-       
-        uiClose.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20).isActive = true
-        uiClose.topAnchor.constraint(equalTo: view.topAnchor, constant: 40).isActive = true
+//        view.addSubview(uiClose)
+//        let centerX = NSLayoutConstraint(item: uiResult, attribute: .centerX, relatedBy: .equal, toItem: superView , attribute: .centerX, multiplier: 1, constant: 0)
+//        let centerY = NSLayoutConstraint(item: uiResult, attribute: .centerY, relatedBy: .equal, toItem: superView , attribute: .centerY, multiplier: 1, constant: 0)
+//
+//        uiClose.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20).isActive = true
+//        uiClose.topAnchor.constraint(equalTo: view.topAnchor, constant: 40).isActive = true
+//
+//        NSLayoutConstraint.activate([centerY, centerX])
+//
+//        let rotation = UIInterfaceOrientation.landscapeRight.rawValue
+//        UIDevice.current.setValue(rotation, forKey: "orientation")
         
-        NSLayoutConstraint.activate([centerY, centerX])
+        uiResult.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -32).isActive = true
+        uiResult.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+        uiResult.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+        uiResult.heightAnchor.constraint(equalToConstant: 50).isActive = true
         
-        let rotation = UIInterfaceOrientation.landscapeRight.rawValue
-        UIDevice.current.setValue(rotation, forKey: "orientation")
-        
-        //        uiResult.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-        //        uiResult.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
-        //        uiResult.heightAnchor.constraint(equalToConstant: 50).isActive = true
     }
     
     func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {

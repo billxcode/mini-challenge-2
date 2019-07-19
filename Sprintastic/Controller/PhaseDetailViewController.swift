@@ -25,7 +25,18 @@ class PhaseDetailViewController: UIViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        tutorialVideoView.load(withVideoId: "rJ0BRPgUxb8")
+        switch phaseData.titlePhase {
+        case "Starting Block":
+            tutorialVideoView.load(withVideoId: "B1nO5bC_v4Q")
+        case "Acceleration":
+            tutorialVideoView.load(withVideoId: "bIsKXTp3nA0")
+        case "Constant Speed":
+            tutorialVideoView.load(withVideoId: "5cnVAgk3G7o")
+        case "Deceleration":
+            tutorialVideoView.load(withVideoId: "deps-IrQkqs")
+        default:
+            tutorialVideoView.load(withVideoId: "B1nO5bC_v4Q")
+        }
         titlePhaseLabel.text = phaseData.titlePhase
         descriptionPhaseLabel.text = phaseData.descriptionPhase
         titleRulesLabel.text = phaseData.titleRules
