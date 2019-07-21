@@ -34,11 +34,24 @@ class ImageClasifierViewController: UIViewController, AVCaptureVideoDataOutputSa
         return label
     }()
     
+    var uiLabelSuggestion: UILabel = {
+        let label = UILabel()
+        label.textColor = .white
+        label.font = UIFont.boldSystemFont(ofSize: 25)
+        label.font = UIFont(name: label.font.fontName, size: 35)
+        label.textAlignment = .center
+        label.numberOfLines = 0
+        label.frame = CGRect(x: 600, y: 10, width: 100, height:300)
+        label.text = "Adjust your arm"
+        return label
+    }()
+    
     let uiClose: UIButton = {
         let button = UIButton()
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
+        button.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         button.layer.cornerRadius = 10
-        button.setTitle("Close", for: .normal)
+        button.setTitle("X", for: .normal)
         button.setTitleColor(.white, for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.addTarget(self, action: #selector(closing), for: .touchDown)
@@ -106,9 +119,10 @@ class ImageClasifierViewController: UIViewController, AVCaptureVideoDataOutputSa
         view.addSubview(uiLeftSide)
         view.addSubview(uiRightSide)
         view.addSubview(uiLabelDirection)
+        view.addSubview(uiLabelSuggestion)
         view.addSubview(uiClose)
         
-        uiClose.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20).isActive = true
+        uiClose.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -30).isActive = true
         uiClose.topAnchor.constraint(equalTo: view.topAnchor, constant: 20).isActive = true
         
         let rotation = UIInterfaceOrientation.landscapeRight.rawValue
