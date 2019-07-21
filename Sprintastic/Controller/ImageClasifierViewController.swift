@@ -49,8 +49,9 @@ class ImageClasifierViewController: UIViewController, AVCaptureVideoDataOutputSa
     let uiClose: UIButton = {
         let button = UIButton()
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
+        button.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         button.layer.cornerRadius = 10
-        button.setTitle("Close", for: .normal)
+        button.setTitle("X", for: .normal)
         button.setTitleColor(.white, for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.addTarget(self, action: #selector(closing), for: .touchDown)
@@ -121,7 +122,7 @@ class ImageClasifierViewController: UIViewController, AVCaptureVideoDataOutputSa
         view.addSubview(uiLabelSuggestion)
         view.addSubview(uiClose)
         
-        uiClose.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20).isActive = true
+        uiClose.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -30).isActive = true
         uiClose.topAnchor.constraint(equalTo: view.topAnchor, constant: 20).isActive = true
         
         let rotation = UIInterfaceOrientation.landscapeRight.rawValue
