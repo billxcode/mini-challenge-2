@@ -83,6 +83,17 @@
             </objects>
             <point key="canvasLocation" x="1064" y="345"/>
         </scene>
+        <!--Interface Controller-->
+        <scene sceneID="Rv9-9u-iZI">
+            <objects>
+                <controller id="D5A-kX-q0b">
+                    <items>
+                        <imageView width="136" height="140" alignment="left" image="start-1" contentMode="scaleAspectFit" id="oXo-hs-JXZ"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1333" y="345"/>
+        </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
             <objects>
