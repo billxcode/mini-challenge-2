@@ -22,15 +22,43 @@ class ImageClasifierViewController: UIViewController, AVCaptureVideoDataOutputSa
         return label
     }()
     
+    var uiLabelDirection: UILabel = {
+        let label = UILabel()
+        label.textColor = .white
+        label.font = UIFont.boldSystemFont(ofSize: 25)
+        label.font = UIFont(name: label.font.fontName, size: 35)
+        label.textAlignment = .center
+        label.numberOfLines = 0
+        label.frame = CGRect(x: 70, y: 10, width: 100, height:300)
+        label.text = "Show your body"
+        return label
+    }()
+    
     let uiClose: UIButton = {
         let button = UIButton()
-        button.tintColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
         button.layer.cornerRadius = 10
         button.setTitle("Close", for: .normal)
-        button.setTitleColor(.black, for: .normal)
+        button.setTitleColor(.white, for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.addTarget(self, action: #selector(closing), for: .touchDown)
         return button
+    }()
+    
+    let uiLeftSide: UIView = {
+       let uiview = UIView()
+        uiview.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        uiview.alpha = 0.5
+        uiview.frame = CGRect(x: 0, y: 0, width: 250, height: 500)
+        return uiview
+    }()
+    
+    let uiRightSide: UIView = {
+        let uiview = UIView()
+        uiview.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        uiview.alpha = 0.5
+        uiview.frame = CGRect(x: 550, y: 0, width: 300, height: 500)
+        return uiview
     }()
     
     @objc func closing(_ sender: UIButton!)
@@ -75,7 +103,9 @@ class ImageClasifierViewController: UIViewController, AVCaptureVideoDataOutputSa
     
     fileprivate func setupResult()
     {
-//        view.addSubview(uiResult)
+        view.addSubview(uiLeftSide)
+        view.addSubview(uiRightSide)
+        view.addSubview(uiLabelDirection)
         view.addSubview(uiClose)
         
         uiClose.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20).isActive = true
@@ -83,11 +113,6 @@ class ImageClasifierViewController: UIViewController, AVCaptureVideoDataOutputSa
         
         let rotation = UIInterfaceOrientation.landscapeRight.rawValue
         UIDevice.current.setValue(rotation, forKey: "orientation")
-//
-//        uiResult.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -32).isActive = true
-//        uiResult.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-//        uiResult.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
-//        uiResult.heightAnchor.constraint(equalToConstant: 50).isActive = true
         
     }
     
@@ -112,8 +137,4 @@ class ImageClasifierViewController: UIViewController, AVCaptureVideoDataOutputSa
         try? VNImageRequestHandler(cvPixelBuffer: pixelBuffer, options: [:]).perform([request])
     }
 
-}
-
-extension AVAsset {
-    
 }
