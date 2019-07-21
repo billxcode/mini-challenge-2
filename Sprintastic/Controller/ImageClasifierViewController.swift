@@ -22,29 +22,33 @@ class ImageClasifierViewController: UIViewController, AVCaptureVideoDataOutputSa
         return label
     }()
     
-    let uiClose: UILabel = {
-        let label = UILabel()
-        label.textColor = .black
-        label.textAlignment = .center
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "Close"
-        return label
+    let uiClose: UIButton = {
+        let button = UIButton()
+        button.tintColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        button.layer.cornerRadius = 10
+        button.setTitle("Close", for: .normal)
+        button.setTitleColor(.black, for: .normal)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(self, action: #selector(closing), for: .touchDown)
+        return button
     }()
+    
+    @objc func closing(_ sender: UIButton!)
+    {
+        self.dismiss(animated: false, completion: nil)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         openCamera()
-        self.navigationController?.navigationBar.isHidden = false
         // Do any additional setup after loading the view.
     }
-    
     
     private func openCamera()
     {
         let captureSession = AVCaptureSession()
         captureSession.sessionPreset = .photo
-        
+
         guard let captureDevice = AVCaptureDevice.default(for: .video) else { return }
         guard let input = try? AVCaptureDeviceInput(device: captureDevice) else { return }
         captureSession.addInput(input)
@@ -53,7 +57,9 @@ class ImageClasifierViewController: UIViewController, AVCaptureVideoDataOutputSa
         
         let previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
         view.layer.addSublayer(previewLayer)
-        previewLayer.frame = view.frame
+        previewLayer.videoGravity = .resizeAspectFill
+        previewLayer.frame = CGRect(x: 0, y: 0, width: view.frame.height, height: view.frame.width)
+        previewLayer.connection?.videoOrientation = .landscapeRight
         
         let dataOutput = AVCaptureVideoDataOutput()
         dataOutput.setSampleBufferDelegate(self, queue: DispatchQueue(label: "videoQueue"))
@@ -62,29 +68,32 @@ class ImageClasifierViewController: UIViewController, AVCaptureVideoDataOutputSa
         setupResult()
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        let rotation = UIInterfaceOrientation.portrait.rawValue
+        UIDevice.current.setValue(rotation, forKey: "orientation")
+    }
+    
     fileprivate func setupResult()
     {
-        view.addSubview(uiResult)
-//        view.addSubview(uiClose)
-//        let centerX = NSLayoutConstraint(item: uiResult, attribute: .centerX, relatedBy: .equal, toItem: superView , attribute: .centerX, multiplier: 1, constant: 0)
-//        let centerY = NSLayoutConstraint(item: uiResult, attribute: .centerY, relatedBy: .equal, toItem: superView , attribute: .centerY, multiplier: 1, constant: 0)
-//
-//        uiClose.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20).isActive = true
-//        uiClose.topAnchor.constraint(equalTo: view.topAnchor, constant: 40).isActive = true
-//
-//        NSLayoutConstraint.activate([centerY, centerX])
-//
-//        let rotation = UIInterfaceOrientation.landscapeRight.rawValue
-//        UIDevice.current.setValue(rotation, forKey: "orientation")
+//        view.addSubview(uiResult)
+        view.addSubview(uiClose)
         
-        uiResult.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -32).isActive = true
-        uiResult.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-        uiResult.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
-        uiResult.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        uiClose.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20).isActive = true
+        uiClose.topAnchor.constraint(equalTo: view.topAnchor, constant: 20).isActive = true
+        
+        let rotation = UIInterfaceOrientation.landscapeRight.rawValue
+        UIDevice.current.setValue(rotation, forKey: "orientation")
+//
+//        uiResult.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -32).isActive = true
+//        uiResult.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+//        uiResult.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+//        uiResult.heightAnchor.constraint(equalToConstant: 50).isActive = true
         
     }
     
     func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
+        
+        connection.videoOrientation = AVCaptureVideoOrientation.landscapeLeft
         
         guard let pixelBuffer: CVPixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else { return }
         
@@ -95,8 +104,6 @@ class ImageClasifierViewController: UIViewController, AVCaptureVideoDataOutputSa
             guard let results = request.results as? [VNClassificationObservation] else { return }
             guard let firstObserver = results.first else { return }
             
-            print(firstObserver.identifier, (firstObserver.confidence * 100))
-            
             DispatchQueue.main.async {
                 self.uiResult.text = "\(firstObserver.identifier) = \(firstObserver.confidence * 100)"
             }
@@ -105,15 +112,8 @@ class ImageClasifierViewController: UIViewController, AVCaptureVideoDataOutputSa
         try? VNImageRequestHandler(cvPixelBuffer: pixelBuffer, options: [:]).perform([request])
     }
 
+}
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+extension AVAsset {
+    
 }

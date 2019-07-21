@@ -408,7 +408,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="OFk-2Y-dX9" kind="show" identifier="ImageClassifier" id="gog-b3-x2g"/>
+                                            <segue destination="OFk-2Y-dX9" kind="showDetail" id="G0z-xa-9Sd"/>
                                         </connections>
                                     </button>
                                 </subviews>
