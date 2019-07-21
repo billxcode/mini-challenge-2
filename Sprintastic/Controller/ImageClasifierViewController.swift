@@ -48,8 +48,8 @@ class ImageClasifierViewController: UIViewController, AVCaptureVideoDataOutputSa
         label.font = UIFont(name: label.font.fontName, size: 35)
         label.textAlignment = .center
         label.numberOfLines = 0
-        label.frame = CGRect(x: 70, y: 10, width: 100, height:300)
-        label.text = "Show your body"
+        label.frame = CGRect(x: 70, y: 20, width: 150, height:300)
+        label.text = "FIT YOUR FULL BODY IN FRAME"
         return label
     }()
     
@@ -61,7 +61,6 @@ class ImageClasifierViewController: UIViewController, AVCaptureVideoDataOutputSa
         label.textAlignment = .center
         label.numberOfLines = 0
         label.frame = CGRect(x: 600, y: 10, width: 100, height:300)
-        label.text = "Adjust your arm"
         return label
     }()
     
@@ -118,9 +117,24 @@ class ImageClasifierViewController: UIViewController, AVCaptureVideoDataOutputSa
     {
         currentCount += 1
         if currentCount > 5 {
+            currentCount = 1
             timer.invalidate()
             self.uiDirection.isHidden = true
             self.uiFirstDirectionLabel.isHidden = true
+            self.timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(showYourSideBody), userInfo: nil, repeats: true)
+        }
+    }
+    
+    @objc func showYourSideBody()
+    {
+        currentCount += 1
+        if currentCount > 5 && currentCount < 10 {
+            self.uiLabelDirection.text = "SHOW YOUR SIDE BODY"
+        } else if currentCount > 10 {
+            timer.invalidate()
+            self.uiDirection.isHidden = false
+            self.uiFirstDirectionLabel.isHidden = false
+            self.uiFirstDirectionLabel.text = "STARTING BLOCK READY"
         }
     }
     
