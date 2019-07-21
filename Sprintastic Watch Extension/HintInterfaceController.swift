@@ -18,7 +18,7 @@ class HintInterfaceController: WKInterfaceController {
         
         // Configure interface objects here.
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 5) {
-            hintLabel.setText("HINT")
+            self.hintLabel.setText("HINT")
         }
     }
 
