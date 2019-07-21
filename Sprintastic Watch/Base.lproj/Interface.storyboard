@@ -78,21 +78,23 @@
                     </items>
                     <connections>
                         <outlet property="hintLabel" destination="Ut7-DM-qVn" id="fcq-hV-LSw"/>
+                        <segue destination="D5A-kX-q0b" kind="relationship" relationship="nextPage" id="fmi-Gb-6m5"/>
                     </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="1064" y="345"/>
         </scene>
-        <!--Interface Controller-->
+        <!--goToHintImage-->
         <scene sceneID="Rv9-9u-iZI">
             <objects>
-                <controller id="D5A-kX-q0b">
+                <controller identifier="goToHintImage" id="D5A-kX-q0b">
                     <items>
-                        <imageView width="136" height="140" alignment="left" image="start-1" contentMode="scaleAspectFit" id="oXo-hs-JXZ"/>
+                        <imageView width="136" height="63" alignment="center" image="start-watch" contentMode="scaleAspectFit" id="oXo-hs-JXZ"/>
+                        <label alignment="left" text="Label" id="nbj-rP-63Q"/>
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="1333" y="345"/>
+            <point key="canvasLocation" x="1391" y="345"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
