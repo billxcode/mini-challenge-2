@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Smooth Corners" translatesAutoresizingMaskIntoConstraints="NO" id="u5g-dl-4KQ">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon" translatesAutoresizingMaskIntoConstraints="NO" id="u5g-dl-4KQ">
                                 <rect key="frame" x="57" y="298" width="300" height="300"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="x1W-Ad-PET"/>
@@ -40,6 +40,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Smooth Corners" width="500" height="500"/>
+        <image name="Icon" width="128" height="128"/>
     </resources>
 </document>

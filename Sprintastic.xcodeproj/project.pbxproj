@@ -30,13 +30,13 @@
 		099EBEEE22D86B8900D3658F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099EBEED22D86B8900D3658F /* AppDelegate.swift */; };
 		099EBEF022D86B8900D3658F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099EBEEF22D86B8900D3658F /* ViewController.swift */; };
 		099EBEF322D86B8900D3658F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 099EBEF122D86B8900D3658F /* Main.storyboard */; };
-		099EBEF522D86B8A00D3658F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 099EBEF422D86B8A00D3658F /* Assets.xcassets */; };
 		099EBEF822D86B8A00D3658F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 099EBEF622D86B8A00D3658F /* LaunchScreen.storyboard */; };
 		099EBF0322D8795600D3658F /* CustomActivitiesImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099EBF0222D8795600D3658F /* CustomActivitiesImageView.swift */; };
 		099EBF0F22D8B42200D3658F /* cataclysmo.regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 099EBF0E22D8B42200D3658F /* cataclysmo.regular.otf */; };
 		099EBF1222D8BA1B00D3658F /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099EBF1122D8BA1B00D3658F /* CustomButton.swift */; };
 		09B5408422E35A240079A080 /* PreparationInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B5408322E35A240079A080 /* PreparationInterfaceController.swift */; };
 		09B5408622E45A550079A080 /* HintInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B5408522E45A550079A080 /* HintInterfaceController.swift */; };
+		09B5408722E4B83A0079A080 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 099EBEF422D86B8A00D3658F /* Assets.xcassets */; };
 		B77B4A5522E0565A004DB80C /* ImageClasifierViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77B4A5422E0565A004DB80C /* ImageClasifierViewController.swift */; };
 		B7B2DBF622DF0D61004C77FD /* ExerciseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B2DBF522DF0D61004C77FD /* ExerciseCollectionViewCell.swift */; };
 		B7C55F2822E480500030D480 /* SprintModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B7C55F2722E480500030D480 /* SprintModel.mlmodel */; };
@@ -431,7 +431,7 @@
 			files = (
 				099EBEF822D86B8A00D3658F /* LaunchScreen.storyboard in Resources */,
 				099EBF0F22D8B42200D3658F /* cataclysmo.regular.otf in Resources */,
-				099EBEF522D86B8A00D3658F /* Assets.xcassets in Resources */,
+				09B5408722E4B83A0079A080 /* Assets.xcassets in Resources */,
 				099EBEF322D86B8900D3658F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -570,7 +570,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C476YGMRCM;
+				DEVELOPMENT_TEAM = 2GUBR74QSP;
 				INFOPLIST_FILE = "Sprintastic Watch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -592,7 +592,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C476YGMRCM;
+				DEVELOPMENT_TEAM = 2GUBR74QSP;
 				INFOPLIST_FILE = "Sprintastic Watch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -615,7 +615,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C476YGMRCM;
+				DEVELOPMENT_TEAM = 2GUBR74QSP;
 				IBSC_MODULE = Sprintastic_Watch_Extension;
 				INFOPLIST_FILE = "Sprintastic Watch/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = idrislabs.Sprintastic.watchkitapp;
@@ -634,7 +634,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C476YGMRCM;
+				DEVELOPMENT_TEAM = 2GUBR74QSP;
 				IBSC_MODULE = Sprintastic_Watch_Extension;
 				INFOPLIST_FILE = "Sprintastic Watch/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = idrislabs.Sprintastic.watchkitapp;
@@ -769,7 +769,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C476YGMRCM;
+				DEVELOPMENT_TEAM = 2GUBR74QSP;
 				INFOPLIST_FILE = Sprintastic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -788,7 +788,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C476YGMRCM;
+				DEVELOPMENT_TEAM = 2GUBR74QSP;
 				INFOPLIST_FILE = Sprintastic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
