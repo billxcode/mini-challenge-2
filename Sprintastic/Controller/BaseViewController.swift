@@ -8,12 +8,22 @@
 
 import UIKit
 
-class BaseViewController: UIViewController {
+class BaseViewController: UIViewController, UIApplicationDelegate {
 
+    let orientation = UIInterfaceOrientationMask.all
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         changesLayout()
         // Do any additional setup after loading the view.
+    }
+    
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return .portrait
+    }
+    
+    override var shouldAutorotate: Bool {
+        return false
     }
     
     override func viewDidAppear(_ animated: Bool) {
