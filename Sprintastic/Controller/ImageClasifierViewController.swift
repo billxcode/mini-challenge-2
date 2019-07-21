@@ -14,6 +14,25 @@ import AVKit
 class ImageClasifierViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
     @IBOutlet var superView: UIView!
     
+    let uiDirection: UIView = {
+        let uiview = UIView()
+        uiview.backgroundColor = #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)
+        uiview.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.height, height: UIScreen.main.bounds.width)
+        return uiview
+    }()
+    
+    let uiFirstDirectionLabel: UILabel = {
+       let uilabel = UILabel()
+        uilabel.text = "Put Your Phone to Capture Your Body"
+        uilabel.font = UIFont(name: uilabel.font.fontName, size: 40)
+        uilabel.textColor = .white
+        uilabel.font = UIFont.boldSystemFont(ofSize: 20)
+        uilabel.translatesAutoresizingMaskIntoConstraints = false
+        uilabel.textAlignment = .center
+        uilabel.numberOfLines = 0
+        return uilabel
+    }()
+    
     let uiResult: UILabel = {
         let label = UILabel()
         label.backgroundColor = .white
@@ -74,15 +93,35 @@ class ImageClasifierViewController: UIViewController, AVCaptureVideoDataOutputSa
         return uiview
     }()
     
+    var timer: Timer!
+    
+    var currentCount = 1
+    
     @objc func closing(_ sender: UIButton!)
     {
         self.dismiss(animated: false, completion: nil)
     }
     
+    override var shouldAutorotate: Bool {
+        return false
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         openCamera()
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(hideFirstViewDirection), userInfo: nil, repeats: true)
+        
         // Do any additional setup after loading the view.
+    }
+    
+    @objc func hideFirstViewDirection()
+    {
+        currentCount += 1
+        if currentCount > 5 {
+            timer.invalidate()
+            self.uiDirection.isHidden = true
+            self.uiFirstDirectionLabel.isHidden = true
+        }
     }
     
     private func openCamera()
@@ -121,6 +160,13 @@ class ImageClasifierViewController: UIViewController, AVCaptureVideoDataOutputSa
         view.addSubview(uiLabelDirection)
         view.addSubview(uiLabelSuggestion)
         view.addSubview(uiClose)
+        view.addSubview(uiDirection)
+        view.addSubview(uiFirstDirectionLabel)
+        
+        let x = NSLayoutConstraint(item: uiFirstDirectionLabel, attribute: .centerX, relatedBy: .equal, toItem: uiDirection, attribute: .centerX, multiplier: 1.0, constant: 0)
+        let y = NSLayoutConstraint(item: uiFirstDirectionLabel, attribute: .centerY, relatedBy: .equal, toItem: uiDirection, attribute: .centerY, multiplier: 1.0, constant: 0)
+        
+        NSLayoutConstraint.activate([x,y])
         
         uiClose.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -30).isActive = true
         uiClose.topAnchor.constraint(equalTo: view.topAnchor, constant: 20).isActive = true
