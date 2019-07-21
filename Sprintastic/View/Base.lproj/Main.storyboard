@@ -408,7 +408,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="OFk-2Y-dX9" kind="showDetail" id="G0z-xa-9Sd"/>
+                                            <segue destination="06A-mi-Hn1" kind="showDetail" id="Vnk-8d-wFW"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -470,6 +470,25 @@
             </objects>
             <point key="canvasLocation" x="1760.8695652173915" y="-544.41964285714278"/>
         </scene>
+        <!--First Direction Before Camera View Controller-->
+        <scene sceneID="T5T-Yv-bvU">
+            <objects>
+                <viewController id="06A-mi-Hn1" customClass="FirstDirectionBeforeCameraViewController" customModule="Sprintastic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="py1-SJ-Azs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="fGU-Th-xYv"/>
+                    </view>
+                    <connections>
+                        <outlet property="superView" destination="py1-SJ-Azs" id="hQG-k7-BmE"/>
+                        <segue destination="OFk-2Y-dX9" kind="showDetail" id="Xbf-8Z-7z2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6hw-gw-lVe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2593" y="-544"/>
+        </scene>
         <!--Camera View Controller-->
         <scene sceneID="8Fd-YU-Yqm">
             <objects>
@@ -499,7 +518,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pog-q8-vPN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2549" y="-544"/>
+            <point key="canvasLocation" x="970" y="173"/>
         </scene>
         <!--Image Clasifier View Controller-->
         <scene sceneID="bG3-MP-Gz0">
@@ -517,7 +536,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KbB-Sa-pRw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1761" y="192"/>
+            <point key="canvasLocation" x="3394" y="-544"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="A03-qh-k1y">
