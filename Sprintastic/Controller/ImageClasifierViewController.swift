@@ -88,7 +88,7 @@ class ImageClasifierViewController: UIViewController, AVCaptureVideoDataOutputSa
         
         guard let pixelBuffer: CVPixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else { return }
         
-        guard let model = try? VNCoreMLModel(for: ImageClassifier().model) else { return }
+        guard let model = try? VNCoreMLModel(for: SprintModel().model) else { return }
         let request = VNCoreMLRequest(model: model) {
             (request, error) in
             
