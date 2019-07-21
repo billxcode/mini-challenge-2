@@ -20,6 +20,8 @@ class InterfaceController: WKInterfaceController,WCSessionDelegate {
         // Configure interface objects here.
     }
     
+    
+    
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
@@ -49,10 +51,5 @@ class InterfaceController: WKInterfaceController,WCSessionDelegate {
     }
     
     func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
-    }
-    
-    
-    @IBAction func readyButtonTapped() {
-        pushController(withName: "goToCountDown", context:nil)
     }
 }

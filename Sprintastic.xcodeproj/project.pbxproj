@@ -36,6 +36,7 @@
 		099EBF0322D8795600D3658F /* CustomActivitiesImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099EBF0222D8795600D3658F /* CustomActivitiesImageView.swift */; };
 		099EBF0F22D8B42200D3658F /* cataclysmo.regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 099EBF0E22D8B42200D3658F /* cataclysmo.regular.otf */; };
 		099EBF1222D8BA1B00D3658F /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099EBF1122D8BA1B00D3658F /* CustomButton.swift */; };
+		09B5408422E35A240079A080 /* PreparationInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B5408322E35A240079A080 /* PreparationInterfaceController.swift */; };
 		B77B4A5522E0565A004DB80C /* ImageClasifierViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77B4A5422E0565A004DB80C /* ImageClasifierViewController.swift */; };
 		B7B2DBF622DF0D61004C77FD /* ExerciseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B2DBF522DF0D61004C77FD /* ExerciseCollectionViewCell.swift */; };
 		B7CD1D3322DEAE690056F46C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CD1D3222DEAE690056F46C /* BaseViewController.swift */; };
@@ -120,6 +121,7 @@
 		099EBF0222D8795600D3658F /* CustomActivitiesImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomActivitiesImageView.swift; sourceTree = "<group>"; };
 		099EBF0E22D8B42200D3658F /* cataclysmo.regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = cataclysmo.regular.otf; sourceTree = "<group>"; };
 		099EBF1122D8BA1B00D3658F /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		09B5408322E35A240079A080 /* PreparationInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparationInterfaceController.swift; sourceTree = "<group>"; };
 		7701DD83314579D653223A23 /* Pods_Sprintastic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sprintastic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B917BD0C039853B4C343625 /* Pods-Sprintastic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sprintastic.release.xcconfig"; path = "Target Support Files/Pods-Sprintastic/Pods-Sprintastic.release.xcconfig"; sourceTree = "<group>"; };
 		B77B4A5422E0565A004DB80C /* ImageClasifierViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClasifierViewController.swift; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 				098687A622E0CBA2008E6B6A /* Info.plist */,
 				098687A722E0CBA2008E6B6A /* PushNotificationPayload.apns */,
 				091A1F2A22E2C4FE00DC4D25 /* CountDownInterfaceController.swift */,
+				09B5408322E35A240079A080 /* PreparationInterfaceController.swift */,
 			);
 			path = "Sprintastic Watch Extension";
 			sourceTree = "<group>";
@@ -468,6 +471,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09B5408422E35A240079A080 /* PreparationInterfaceController.swift in Sources */,
 				098687A322E0CBA2008E6B6A /* NotificationController.swift in Sources */,
 				098687A122E0CBA2008E6B6A /* ExtensionDelegate.swift in Sources */,
 				091A1F2B22E2C4FE00DC4D25 /* CountDownInterfaceController.swift in Sources */,
