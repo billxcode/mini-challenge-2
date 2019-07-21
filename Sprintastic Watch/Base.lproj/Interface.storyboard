@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14490.70" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14490.21"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Sprintastic_Watch" customModuleProvider="target">
+                    <items>
+                        <label width="136" height="25" alignment="center" verticalAlignment="center" text="Starting Block" textAlignment="center" baselineAdjustment="alignCenters" id="wJ7-pX-ntH">
+                            <fontDescription key="font" type="boldSystem" pointSize="19"/>
+                        </label>
+                        <button width="1" alignment="left" verticalAlignment="center" title="Start" id="Gnm-8K-c0r">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" red="0.61176470589999998" green="0.1647058824" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="th2-Qx-gds" kind="push" identifier="goToPreparation" id="0k0-bU-yDq"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="183" y="345"/>
+        </scene>
+        <!--Preparation Interface Controller-->
+        <scene sceneID="wKg-rR-33r">
+            <objects>
+                <controller id="th2-Qx-gds" customClass="PreparationInterfaceController" customModule="Sprintastic_Watch_Extension">
+                    <items>
+                        <label width="136" height="163" alignment="center" verticalAlignment="center" text="FIT FULL YOUR BODY" textAlignment="center" numberOfLines="0" id="sm0-cO-0Iz">
+                            <fontDescription key="font" type="boldSystem" pointSize="22"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="labelHint" destination="sm0-cO-0Iz" id="VoU-VV-dfH"/>
+                        <segue destination="Ae8-iE-iaK" kind="relationship" relationship="nextPage" id="QQ9-Nw-Dvr"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="501" y="345"/>
+        </scene>
+        <!--goToCountDown-->
+        <scene sceneID="F1a-hU-RfD">
+            <objects>
+                <controller identifier="goToCountDown" id="Ae8-iE-iaK" customClass="CountDownInterfaceController" customModule="Sprintastic_Watch_Extension">
+                    <items>
+                        <label width="136" height="166" alignment="center" text="3" textAlignment="center" baselineAdjustment="alignCenters" id="H6M-lE-DSN">
+                            <fontDescription key="font" type="boldSystem" pointSize="72"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="numberLabel" destination="H6M-lE-DSN" id="xen-kj-t8p"/>
+                        <segue destination="qNZ-NO-0in" kind="relationship" relationship="nextPage" id="frL-0h-vHQ"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="781" y="345"/>
+        </scene>
+        <!--goToHint-->
+        <scene sceneID="bo7-YV-Mq1">
+            <objects>
+                <controller identifier="goToHint" id="qNZ-NO-0in" customClass="HintInterfaceController" customModule="Sprintastic_Watch_Extension">
+                    <items>
+                        <label width="135" height="208" alignment="center" text="READY" textAlignment="center" baselineAdjustment="alignCenters" id="Ut7-DM-qVn">
+                            <fontDescription key="font" type="boldSystem" pointSize="30"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="hintLabel" destination="Ut7-DM-qVn" id="fcq-hV-LSw"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1064" y="345"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" numberOfLines="0" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                        <segue destination="eXb-UN-Cd0" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="mpB-YA-K8N"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="Sprintastic_Watch" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="495" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="Niz-AI-uX2">
+            <objects>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="Sprintastic_Watch" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="743" y="643"/>
+        </scene>
+    </scenes>
+</document>

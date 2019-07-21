@@ -7,12 +7,13 @@
 //
 
 import UIKit
+import WatchConnectivity
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    
+    let session = WCSession.default
     override init() {
         
     }
@@ -20,6 +21,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         Thread.sleep(forTimeInterval: 2.0)
+        if WCSession.isSupported(){
+            session.delegate = self
+            session.activate()
+        }
         
         // Override point for customization after application launch.
         return true
@@ -46,7 +51,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
 }
+
+extension AppDelegate:WCSessionDelegate{
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        
+    }
+    
+    func sessionDidBecomeInactive(_ session: WCSession) {
+        
+    }
+    
+    func sessionDidDeactivate(_ session: WCSession) {
+        self.session.activate()
+    }
+}
+
 
