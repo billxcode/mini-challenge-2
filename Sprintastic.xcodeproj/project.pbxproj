@@ -574,7 +574,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C476YGMRCM;
+				DEVELOPMENT_TEAM = 2GUBR74QSP;
 				INFOPLIST_FILE = "Sprintastic Watch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -596,7 +596,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C476YGMRCM;
+				DEVELOPMENT_TEAM = 2GUBR74QSP;
 				INFOPLIST_FILE = "Sprintastic Watch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -619,7 +619,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C476YGMRCM;
+				DEVELOPMENT_TEAM = 2GUBR74QSP;
 				IBSC_MODULE = Sprintastic_Watch_Extension;
 				INFOPLIST_FILE = "Sprintastic Watch/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = idrislabs.Sprintastic.watchkitapp;
@@ -638,7 +638,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C476YGMRCM;
+				DEVELOPMENT_TEAM = 2GUBR74QSP;
 				IBSC_MODULE = Sprintastic_Watch_Extension;
 				INFOPLIST_FILE = "Sprintastic Watch/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = idrislabs.Sprintastic.watchkitapp;
@@ -773,7 +773,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C476YGMRCM;
+				DEVELOPMENT_TEAM = 2GUBR74QSP;
 				INFOPLIST_FILE = Sprintastic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -792,7 +792,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C476YGMRCM;
+				DEVELOPMENT_TEAM = 2GUBR74QSP;
 				INFOPLIST_FILE = Sprintastic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

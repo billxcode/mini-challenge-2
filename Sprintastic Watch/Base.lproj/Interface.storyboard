@@ -21,18 +21,22 @@
                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <color key="backgroundColor" red="0.61176470589999998" green="0.1647058824" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="th2-Qx-gds" kind="push" identifier="goToPreparation" id="0k0-bU-yDq"/>
+                                <action selector="startTapped" destination="AgC-eL-Hgc" id="TyR-Tr-ycR"/>
+                                <segue destination="th2-Qx-gds" kind="push" identifier="goToPreparation" id="dFE-NK-4Up"/>
                             </connections>
                         </button>
                     </items>
+                    <connections>
+                        <outlet property="label" destination="wJ7-pX-ntH" id="gEs-sE-qFX"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="183" y="345"/>
         </scene>
-        <!--Preparation Interface Controller-->
+        <!--goToPreparation-->
         <scene sceneID="wKg-rR-33r">
             <objects>
-                <controller id="th2-Qx-gds" customClass="PreparationInterfaceController" customModule="Sprintastic_Watch_Extension">
+                <controller identifier="goToPreparation" id="th2-Qx-gds" customClass="PreparationInterfaceController" customModule="Sprintastic_Watch_Extension">
                     <items>
                         <label width="127" height="110" alignment="center" text="FIT FULL YOUR BODY" textAlignment="center" numberOfLines="0" id="sm0-cO-0Iz">
                             <fontDescription key="font" type="boldSystem" pointSize="22"/>

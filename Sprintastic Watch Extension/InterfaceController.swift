@@ -14,6 +14,7 @@ import WatchConnectivity
 class InterfaceController: WKInterfaceController,WCSessionDelegate {
     private var session = WCSession.default
     
+    @IBOutlet weak var label: WKInterfaceLabel!
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
@@ -37,6 +38,12 @@ class InterfaceController: WKInterfaceController,WCSessionDelegate {
         super.didDeactivate()
     }
     
+    @IBAction func startTapped() {
+        self.pushController(withName: "goToPreparation", context: nil)
+        session.sendMessage(["request":"response"], replyHandler: nil) { (error) in
+            print(error)
+        }
+    }
     private func isSupported()->Bool{
         return WCSession.isSupported()
     }
@@ -51,5 +58,6 @@ class InterfaceController: WKInterfaceController,WCSessionDelegate {
     }
     
     func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
+        startTapped()
     }
 }
