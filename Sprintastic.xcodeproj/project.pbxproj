@@ -11,7 +11,6 @@
 		0959153522E1507D00197CA0 /* SessionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0959153422E1507D00197CA0 /* SessionHandler.swift */; };
 		0983BDD022DA1D0A002A1102 /* Phase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0983BDCF22DA1D0A002A1102 /* Phase.swift */; };
 		0983BDD322DA26E8002A1102 /* PhaseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0983BDD222DA26E8002A1102 /* PhaseDetailViewController.swift */; };
-		0986878A22E0C285008E6B6A /* ImageClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0986878922E0C285008E6B6A /* ImageClassifier.mlmodel */; };
 		0986879122E0CBA1008E6B6A /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0986878F22E0CBA1008E6B6A /* Interface.storyboard */; };
 		0986879322E0CBA2008E6B6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0986879222E0CBA2008E6B6A /* Assets.xcassets */; };
 		0986879A22E0CBA2008E6B6A /* Sprintastic Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0986879922E0CBA2008E6B6A /* Sprintastic Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -40,8 +39,10 @@
 		09B5408622E45A550079A080 /* HintInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B5408522E45A550079A080 /* HintInterfaceController.swift */; };
 		B77B4A5522E0565A004DB80C /* ImageClasifierViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77B4A5422E0565A004DB80C /* ImageClasifierViewController.swift */; };
 		B7B2DBF622DF0D61004C77FD /* ExerciseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B2DBF522DF0D61004C77FD /* ExerciseCollectionViewCell.swift */; };
+		B7C55F2822E480500030D480 /* SprintModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B7C55F2722E480500030D480 /* SprintModel.mlmodel */; };
 		B7CD1D3322DEAE690056F46C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CD1D3222DEAE690056F46C /* BaseViewController.swift */; };
 		B7CD1D3622DEB9010056F46C /* CustomUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CD1D3522DEB9010056F46C /* CustomUIView.swift */; };
+		B7E0C2F422E1E8C50042E1B3 /* ImageClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B7E0C2F322E1E8C50042E1B3 /* ImageClassifier.mlmodel */; };
 		BF60D5B5C8CA3B793E4011E5 /* Pods_Sprintastic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7701DD83314579D653223A23 /* Pods_Sprintastic.framework */; };
 /* End PBXBuildFile section */
 
@@ -92,17 +93,14 @@
 		0959153422E1507D00197CA0 /* SessionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionHandler.swift; sourceTree = "<group>"; };
 		0983BDCF22DA1D0A002A1102 /* Phase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Phase.swift; sourceTree = "<group>"; };
 		0983BDD222DA26E8002A1102 /* PhaseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhaseDetailViewController.swift; sourceTree = "<group>"; };
-		0986878922E0C285008E6B6A /* ImageClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = ImageClassifier.mlmodel; path = ../../../ImageClassifier.mlmodel; sourceTree = "<group>"; };
 		0986878D22E0CBA1008E6B6A /* Sprintastic Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sprintastic Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0986879022E0CBA1008E6B6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		0986879222E0CBA2008E6B6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0986879422E0CBA2008E6B6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0986879922E0CBA2008E6B6A /* Sprintastic Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Sprintastic Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0986879E22E0CBA2008E6B6A /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		098687A022E0CBA2008E6B6A /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		098687A222E0CBA2008E6B6A /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		098687A422E0CBA2008E6B6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		098687A622E0CBA2008E6B6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		098687A722E0CBA2008E6B6A /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		099AB43722DDB1E20041E10B /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		099AB43922DDB30D0041E10B /* model_cpm.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = model_cpm.mlmodel; sourceTree = "<group>"; };
@@ -128,8 +126,12 @@
 		9B917BD0C039853B4C343625 /* Pods-Sprintastic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sprintastic.release.xcconfig"; path = "Target Support Files/Pods-Sprintastic/Pods-Sprintastic.release.xcconfig"; sourceTree = "<group>"; };
 		B77B4A5422E0565A004DB80C /* ImageClasifierViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClasifierViewController.swift; sourceTree = "<group>"; };
 		B7B2DBF522DF0D61004C77FD /* ExerciseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCollectionViewCell.swift; sourceTree = "<group>"; };
+		B7C55F0322E466080030D480 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7C55F0722E4669D0030D480 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7C55F2722E480500030D480 /* SprintModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SprintModel.mlmodel; sourceTree = "<group>"; };
 		B7CD1D3222DEAE690056F46C /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		B7CD1D3522DEB9010056F46C /* CustomUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIView.swift; sourceTree = "<group>"; };
+		B7E0C2F322E1E8C50042E1B3 /* ImageClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ImageClassifier.mlmodel; sourceTree = "<group>"; };
 		CBD90CA234068C5963645176 /* Pods-Sprintastic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sprintastic.debug.xcconfig"; path = "Target Support Files/Pods-Sprintastic/Pods-Sprintastic.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -167,7 +169,7 @@
 			children = (
 				0986878F22E0CBA1008E6B6A /* Interface.storyboard */,
 				0986879222E0CBA2008E6B6A /* Assets.xcassets */,
-				0986879422E0CBA2008E6B6A /* Info.plist */,
+				B7C55F0722E4669D0030D480 /* Info.plist */,
 			);
 			path = "Sprintastic Watch";
 			sourceTree = "<group>";
@@ -178,8 +180,8 @@
 				0986879E22E0CBA2008E6B6A /* InterfaceController.swift */,
 				098687A022E0CBA2008E6B6A /* ExtensionDelegate.swift */,
 				098687A222E0CBA2008E6B6A /* NotificationController.swift */,
+				B7C55F0322E466080030D480 /* Info.plist */,
 				098687A422E0CBA2008E6B6A /* Assets.xcassets */,
-				098687A622E0CBA2008E6B6A /* Info.plist */,
 				098687A722E0CBA2008E6B6A /* PushNotificationPayload.apns */,
 				091A1F2A22E2C4FE00DC4D25 /* CountDownInterfaceController.swift */,
 				09B5408322E35A240079A080 /* PreparationInterfaceController.swift */,
@@ -213,8 +215,8 @@
 		099EBEEC22D86B8900D3658F /* Sprintastic */ = {
 			isa = PBXGroup;
 			children = (
+				B7C55F2922E480610030D480 /* Data */,
 				B7CD1D3422DEB8AC0056F46C /* CustomClass */,
-				099AB43922DDB30D0041E10B /* model_cpm.mlmodel */,
 				099EBEED22D86B8900D3658F /* AppDelegate.swift */,
 				099EBEF922D86B8A00D3658F /* Info.plist */,
 				099EBF0022D8790000D3658F /* Controller */,
@@ -248,7 +250,6 @@
 				099AB44522DDC3250041E10B /* Measure.swift */,
 				B7CD1D3222DEAE690056F46C /* BaseViewController.swift */,
 				B77B4A5422E0565A004DB80C /* ImageClasifierViewController.swift */,
-				0986878922E0C285008E6B6A /* ImageClassifier.mlmodel */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -276,6 +277,16 @@
 				9B917BD0C039853B4C343625 /* Pods-Sprintastic.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		B7C55F2922E480610030D480 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B7C55F2722E480500030D480 /* SprintModel.mlmodel */,
+				B7E0C2F322E1E8C50042E1B3 /* ImageClassifier.mlmodel */,
+				099AB43922DDB30D0041E10B /* model_cpm.mlmodel */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 		B7CD1D3422DEB8AC0056F46C /* CustomClass */ = {
@@ -488,6 +499,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				099AB44622DDC3250041E10B /* Measure.swift in Sources */,
+				B7C55F2822E480500030D480 /* SprintModel.mlmodel in Sources */,
 				B7CD1D3622DEB9010056F46C /* CustomUIView.swift in Sources */,
 				B7B2DBF622DF0D61004C77FD /* ExerciseCollectionViewCell.swift in Sources */,
 				099EBF0322D8795600D3658F /* CustomActivitiesImageView.swift in Sources */,
@@ -506,7 +518,7 @@
 				099AB43822DDB1E20041E10B /* CameraViewController.swift in Sources */,
 				099EBEEE22D86B8900D3658F /* AppDelegate.swift in Sources */,
 				0983BDD022DA1D0A002A1102 /* Phase.swift in Sources */,
-				0986878A22E0C285008E6B6A /* ImageClassifier.mlmodel in Sources */,
+				B7E0C2F422E1E8C50042E1B3 /* ImageClassifier.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,7 +570,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2GUBR74QSP;
+				DEVELOPMENT_TEAM = C476YGMRCM;
 				INFOPLIST_FILE = "Sprintastic Watch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -571,7 +583,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
 			};
 			name = Debug;
 		};
@@ -580,7 +592,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2GUBR74QSP;
+				DEVELOPMENT_TEAM = C476YGMRCM;
 				INFOPLIST_FILE = "Sprintastic Watch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -593,7 +605,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
 			};
 			name = Release;
 		};
@@ -603,7 +615,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2GUBR74QSP;
+				DEVELOPMENT_TEAM = C476YGMRCM;
 				IBSC_MODULE = Sprintastic_Watch_Extension;
 				INFOPLIST_FILE = "Sprintastic Watch/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = idrislabs.Sprintastic.watchkitapp;
@@ -612,7 +624,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
 			};
 			name = Debug;
 		};
@@ -622,7 +634,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2GUBR74QSP;
+				DEVELOPMENT_TEAM = C476YGMRCM;
 				IBSC_MODULE = Sprintastic_Watch_Extension;
 				INFOPLIST_FILE = "Sprintastic Watch/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = idrislabs.Sprintastic.watchkitapp;
@@ -631,7 +643,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
 			};
 			name = Release;
 		};
