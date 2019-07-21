@@ -37,7 +37,6 @@
 		09B5408422E35A240079A080 /* PreparationInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B5408322E35A240079A080 /* PreparationInterfaceController.swift */; };
 		09B5408622E45A550079A080 /* HintInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B5408522E45A550079A080 /* HintInterfaceController.swift */; };
 		09B5408722E4B83A0079A080 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 099EBEF422D86B8A00D3658F /* Assets.xcassets */; };
-		B76900D822E4E12D0064D13C /* FirstDirectionBeforeCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76900D722E4E12D0064D13C /* FirstDirectionBeforeCameraViewController.swift */; };
 		B77B4A5522E0565A004DB80C /* ImageClasifierViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77B4A5422E0565A004DB80C /* ImageClasifierViewController.swift */; };
 		B7B2DBF622DF0D61004C77FD /* ExerciseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B2DBF522DF0D61004C77FD /* ExerciseCollectionViewCell.swift */; };
 		B7C55F2822E480500030D480 /* SprintModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B7C55F2722E480500030D480 /* SprintModel.mlmodel */; };
@@ -125,7 +124,6 @@
 		09B5408522E45A550079A080 /* HintInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HintInterfaceController.swift; sourceTree = "<group>"; };
 		7701DD83314579D653223A23 /* Pods_Sprintastic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sprintastic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B917BD0C039853B4C343625 /* Pods-Sprintastic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sprintastic.release.xcconfig"; path = "Target Support Files/Pods-Sprintastic/Pods-Sprintastic.release.xcconfig"; sourceTree = "<group>"; };
-		B76900D722E4E12D0064D13C /* FirstDirectionBeforeCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstDirectionBeforeCameraViewController.swift; sourceTree = "<group>"; };
 		B77B4A5422E0565A004DB80C /* ImageClasifierViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClasifierViewController.swift; sourceTree = "<group>"; };
 		B7B2DBF522DF0D61004C77FD /* ExerciseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCollectionViewCell.swift; sourceTree = "<group>"; };
 		B7C55F0322E466080030D480 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -252,7 +250,6 @@
 				099AB44522DDC3250041E10B /* Measure.swift */,
 				B7CD1D3222DEAE690056F46C /* BaseViewController.swift */,
 				B77B4A5422E0565A004DB80C /* ImageClasifierViewController.swift */,
-				B76900D722E4E12D0064D13C /* FirstDirectionBeforeCameraViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -506,7 +503,6 @@
 				B7CD1D3622DEB9010056F46C /* CustomUIView.swift in Sources */,
 				B7B2DBF622DF0D61004C77FD /* ExerciseCollectionViewCell.swift in Sources */,
 				099EBF0322D8795600D3658F /* CustomActivitiesImageView.swift in Sources */,
-				B76900D822E4E12D0064D13C /* FirstDirectionBeforeCameraViewController.swift in Sources */,
 				099AB43E22DDB5910041E10B /* PredictedPoint.swift in Sources */,
 				B77B4A5522E0565A004DB80C /* ImageClasifierViewController.swift in Sources */,
 				099AB43A22DDB30D0041E10B /* model_cpm.mlmodel in Sources */,
