@@ -500,7 +500,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pog-q8-vPN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2549" y="-544"/>
+            <point key="canvasLocation" x="970" y="173"/>
         </scene>
         <!--Image Clasifier View Controller-->
         <scene sceneID="bG3-MP-Gz0">
@@ -518,7 +518,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KbB-Sa-pRw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1761" y="192"/>
+            <point key="canvasLocation" x="2681" y="-544"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="A03-qh-k1y">
