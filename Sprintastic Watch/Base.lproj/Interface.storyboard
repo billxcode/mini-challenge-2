@@ -34,12 +34,16 @@
             <objects>
                 <controller id="th2-Qx-gds" customClass="PreparationInterfaceController" customModule="Sprintastic_Watch_Extension">
                     <items>
-                        <label width="136" height="163" alignment="center" verticalAlignment="center" text="FIT FULL YOUR BODY" textAlignment="center" numberOfLines="0" id="sm0-cO-0Iz">
+                        <label width="127" height="110" alignment="center" text="FIT FULL YOUR BODY" textAlignment="center" numberOfLines="0" id="sm0-cO-0Iz">
                             <fontDescription key="font" type="boldSystem" pointSize="22"/>
+                        </label>
+                        <label width="136" height="31" alignment="center" text="." textAlignment="center" baselineAdjustment="alignCenters" id="ptY-vd-5w8">
+                            <fontDescription key="font" type="boldSystem" pointSize="40"/>
                         </label>
                     </items>
                     <connections>
                         <outlet property="labelHint" destination="sm0-cO-0Iz" id="VoU-VV-dfH"/>
+                        <outlet property="loadingLabel" destination="ptY-vd-5w8" id="siz-My-3NR"/>
                         <segue destination="Ae8-iE-iaK" kind="relationship" relationship="nextPage" id="QQ9-Nw-Dvr"/>
                     </connections>
                 </controller>
@@ -78,6 +82,17 @@
                 </controller>
             </objects>
             <point key="canvasLocation" x="1064" y="345"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="Rv9-9u-iZI">
+            <objects>
+                <controller id="D5A-kX-q0b">
+                    <items>
+                        <imageView width="136" height="140" alignment="left" image="start-1" contentMode="scaleAspectFit" id="oXo-hs-JXZ"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1333" y="345"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
