@@ -17,12 +17,9 @@ class HintInterfaceController: WKInterfaceController {
         super.awake(withContext: context)
         
         // Configure interface objects here.
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 5) {
-            self.hintLabel.setText("HINT")
-            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2, execute: {
-                self.pushController(withName: "goToHintImage", context: nil)
-            })
-        }
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2, execute: {
+            self.pushController(withName: "goToHintImage", context: nil)
+        })
     }
 
     override func willActivate() {

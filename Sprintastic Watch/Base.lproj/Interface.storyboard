@@ -90,7 +90,6 @@
                 <controller identifier="goToHintImage" id="D5A-kX-q0b">
                     <items>
                         <imageView width="136" height="63" alignment="center" image="start-watch" contentMode="scaleAspectFit" id="oXo-hs-JXZ"/>
-                        <label alignment="left" text="Label" id="nbj-rP-63Q"/>
                     </items>
                 </controller>
             </objects>
