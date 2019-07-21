@@ -39,6 +39,7 @@ class CountDownInterfaceController: WKInterfaceController {
         seconds -= 1
         if seconds == 1 {
             timer.invalidate()
+            pushController(withName: "goToHint", context: nil)
         }
         
         numberLabel.setText("\(seconds)")

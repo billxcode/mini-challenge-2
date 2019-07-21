@@ -57,17 +57,27 @@
                     </items>
                     <connections>
                         <outlet property="numberLabel" destination="H6M-lE-DSN" id="xen-kj-t8p"/>
+                        <segue destination="qNZ-NO-0in" kind="relationship" relationship="nextPage" id="frL-0h-vHQ"/>
                     </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="781" y="345"/>
         </scene>
-        <!--Interface Controller-->
+        <!--goToHint-->
         <scene sceneID="bo7-YV-Mq1">
             <objects>
-                <controller id="qNZ-NO-0in"/>
+                <controller identifier="goToHint" id="qNZ-NO-0in" customClass="HintInterfaceController" customModule="Sprintastic_Watch_Extension">
+                    <items>
+                        <label width="135" height="208" alignment="center" text="READY" textAlignment="center" baselineAdjustment="alignCenters" id="Ut7-DM-qVn">
+                            <fontDescription key="font" type="boldSystem" pointSize="30"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="hintLabel" destination="Ut7-DM-qVn" id="fcq-hV-LSw"/>
+                    </connections>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="1159" y="349"/>
+            <point key="canvasLocation" x="1064" y="345"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
