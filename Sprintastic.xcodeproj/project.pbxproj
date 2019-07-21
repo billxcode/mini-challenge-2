@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		091A1F2B22E2C4FE00DC4D25 /* CountDownInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091A1F2A22E2C4FE00DC4D25 /* CountDownInterfaceController.swift */; };
+		0925972B22E4DCD100AE0CE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0986879222E0CBA2008E6B6A /* Assets.xcassets */; };
+		0925972C22E4DCD600AE0CE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 098687A422E0CBA2008E6B6A /* Assets.xcassets */; };
 		0959153522E1507D00197CA0 /* SessionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0959153422E1507D00197CA0 /* SessionHandler.swift */; };
 		0983BDD022DA1D0A002A1102 /* Phase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0983BDCF22DA1D0A002A1102 /* Phase.swift */; };
 		0983BDD322DA26E8002A1102 /* PhaseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0983BDD222DA26E8002A1102 /* PhaseDetailViewController.swift */; };
@@ -413,6 +415,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0986879322E0CBA2008E6B6A /* Assets.xcassets in Resources */,
+				0925972C22E4DCD600AE0CE3 /* Assets.xcassets in Resources */,
 				0986879122E0CBA1008E6B6A /* Interface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -421,6 +424,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0925972B22E4DCD100AE0CE3 /* Assets.xcassets in Resources */,
 				098687A522E0CBA2008E6B6A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
