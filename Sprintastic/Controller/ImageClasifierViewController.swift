@@ -14,6 +14,13 @@ import AVKit
 class ImageClasifierViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
     @IBOutlet var superView: UIView!
     
+    let uiFirstDirectionImage: UIImageView = {
+        let uiimageview = UIImageView()
+        uiimageview.image = UIImage(named: "put your phone")
+        uiimageview.translatesAutoresizingMaskIntoConstraints = false
+        return uiimageview
+    }()
+    
     let uiDirection: UIView = {
         let uiview = UIView()
         uiview.backgroundColor = #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)
@@ -208,10 +215,9 @@ class ImageClasifierViewController: UIViewController, AVCaptureVideoDataOutputSa
         view.addSubview(uiClose)
         view.addSubview(uiDirection)
         view.addSubview(uiFirstDirectionLabel)
-        
         let x = NSLayoutConstraint(item: uiFirstDirectionLabel, attribute: .centerX, relatedBy: .equal, toItem: uiDirection, attribute: .centerX, multiplier: 1.0, constant: 0)
         let y = NSLayoutConstraint(item: uiFirstDirectionLabel, attribute: .centerY, relatedBy: .equal, toItem: uiDirection, attribute: .centerY, multiplier: 1.0, constant: 0)
-        
+
         NSLayoutConstraint.activate([x,y])
         
         uiResult.topAnchor.constraint(equalTo: view.topAnchor, constant: 0).isActive = true
