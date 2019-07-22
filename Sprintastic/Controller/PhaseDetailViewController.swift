@@ -70,11 +70,13 @@ extension PhaseDetailViewController:WCSessionDelegate{
         self.session.activate()
     }
     
-    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+    func session(_ session: WCSession, activationDidCompleteWith activationState:
+        WCSessionActivationState, error: Error?) {
         
     }
     
     func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
+        titlePhaseLabel.text = "changed"
         self.performSegue(withIdentifier: "goToCamera", sender: nil)
     }
     
