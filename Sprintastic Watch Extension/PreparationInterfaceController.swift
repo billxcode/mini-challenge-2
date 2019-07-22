@@ -18,6 +18,8 @@ class PreparationInterfaceController: WKInterfaceController {
     var timer = Timer()
     var bool = false
     var timerCount = Timer()
+    var temp = 0
+    var interval:TimeInterval = 5
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
@@ -29,7 +31,7 @@ class PreparationInterfaceController: WKInterfaceController {
     }
     
     func runTimer(){
-        timer = Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(self.updateTimer), userInfo: nil, repeats: false)
+        timer = Timer.scheduledTimer(timeInterval: interval, target: self, selector: #selector(self.updateTimer), userInfo: nil, repeats: true)
     }
     
     func countTimer(){
@@ -45,14 +47,30 @@ class PreparationInterfaceController: WKInterfaceController {
     }
     
     @objc func updateTimer(){
-        labelHint.setText("FIT FULL YOUR BODY")
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()+5) {
-            self.labelHint.setText("SHOW YOUR BODY'S SIDE")
-            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()+5) {
-                self.goToCountDown()
-            }
+        temp += 1
+        switch temp {
+        case 1:
+            labelHint.setText("FIT FULL YOUR BODY")
+        case 2:
+            labelHint.setText("SHOW YOUR BODY'S SIDE")
+        case 3:
+            labelHint.setText("STARTING BLOCK READY")
+            timer.invalidate()
+            temp = 1
+            goToCountDown()
+        default:
+            labelHint.setText("FIT FULL YOUR BODY")
         }
-        
+//        labelHint.setText("FIT FULL YOUR BODY")
+//        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()+5) {
+//            self.labelHint.setText("SHOW YOUR BODY'S SIDE")
+//            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()+5, execute: {
+//                self.labelHint.setText("STARTING BLOCK READY")
+//                DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()+5) {
+//                    self.goToCountDown()
+//                }
+//            })
+//        }
     }
     
     @objc func goToCountDown(){
