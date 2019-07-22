@@ -142,8 +142,8 @@ class ImageClasifierViewController: UIViewController, AVCaptureVideoDataOutputSa
     {
         let captureSession = AVCaptureSession()
         captureSession.sessionPreset = .photo
-
-        guard let captureDevice = AVCaptureDevice.default(for: .video) else { return }
+        
+        guard let captureDevice = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .front) else { return }
         guard let input = try? AVCaptureDeviceInput(device: captureDevice) else { return }
         captureSession.addInput(input)
         
