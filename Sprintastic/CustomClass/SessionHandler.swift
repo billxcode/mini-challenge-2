@@ -36,12 +36,4 @@ class SessionHandler: NSObject,WCSessionDelegate {
     func sessionDidDeactivate(_ session: WCSession) {
         self.session.activate()
     }
-    
-    func session(_ session: WCSession, didReceiveMessage message: [String : Any], replyHandler: @escaping ([String : Any]) -> Void) {
-        if let msg = message["request"] as? String{
-            DispatchQueue.main.async {
-                print(msg)
-            }
-        }
-    }
 }

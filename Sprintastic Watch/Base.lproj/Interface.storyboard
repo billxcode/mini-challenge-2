@@ -21,21 +21,25 @@
                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <color key="backgroundColor" red="0.61176470589999998" green="0.1647058824" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="th2-Qx-gds" kind="push" identifier="goToPreparation" id="0k0-bU-yDq"/>
+                                <action selector="startTapped" destination="AgC-eL-Hgc" id="TyR-Tr-ycR"/>
+                                <segue destination="th2-Qx-gds" kind="push" identifier="goToPreparation" id="dFE-NK-4Up"/>
                             </connections>
                         </button>
                     </items>
+                    <connections>
+                        <outlet property="label" destination="wJ7-pX-ntH" id="gEs-sE-qFX"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="183" y="345"/>
         </scene>
-        <!--Preparation Interface Controller-->
+        <!--goToPreparation-->
         <scene sceneID="wKg-rR-33r">
             <objects>
-                <controller id="th2-Qx-gds" customClass="PreparationInterfaceController" customModule="Sprintastic_Watch_Extension">
+                <controller identifier="goToPreparation" id="th2-Qx-gds" customClass="PreparationInterfaceController" customModule="Sprintastic_Watch_Extension">
                     <items>
-                        <label width="127" height="110" alignment="center" text="FIT FULL YOUR BODY" textAlignment="center" numberOfLines="0" id="sm0-cO-0Iz">
-                            <fontDescription key="font" type="boldSystem" pointSize="22"/>
+                        <label width="127" height="118" alignment="center" text="PUT YOUR PHONE TO CAPTURE YOUR FULL BODY" textAlignment="center" numberOfLines="0" id="sm0-cO-0Iz">
+                            <fontDescription key="font" type="boldSystem" pointSize="19"/>
                         </label>
                         <label width="136" height="31" alignment="center" text="." textAlignment="center" baselineAdjustment="alignCenters" id="ptY-vd-5w8">
                             <fontDescription key="font" type="boldSystem" pointSize="40"/>
@@ -48,7 +52,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="501" y="345"/>
+            <point key="canvasLocation" x="627" y="346"/>
         </scene>
         <!--goToCountDown-->
         <scene sceneID="F1a-hU-RfD">
@@ -65,7 +69,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="781" y="345"/>
+            <point key="canvasLocation" x="908" y="345"/>
         </scene>
         <!--goToHint-->
         <scene sceneID="bo7-YV-Mq1">
@@ -82,18 +86,18 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="1064" y="345"/>
+            <point key="canvasLocation" x="1212" y="345"/>
         </scene>
         <!--goToHintImage-->
         <scene sceneID="Rv9-9u-iZI">
             <objects>
                 <controller identifier="goToHintImage" id="D5A-kX-q0b">
                     <items>
-                        <imageView width="136" height="63" alignment="center" image="start-watch" contentMode="scaleAspectFit" id="oXo-hs-JXZ"/>
+                        <imageView width="136" height="148" alignment="center" image="start-watch" contentMode="scaleAspectFit" id="oXo-hs-JXZ"/>
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="1391" y="345"/>
+            <point key="canvasLocation" x="1604" y="345"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">

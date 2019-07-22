@@ -8,9 +8,11 @@
 
 import UIKit
 import YoutubePlayer_in_WKWebView
+import WatchConnectivity
 
 class PhaseDetailViewController: UIViewController {
 
+    var session = WCSession.default
    
     @IBOutlet weak var tutorialVideoView: WKYTPlayerView!
     @IBOutlet weak var titlePhaseLabel: UILabel!
@@ -23,6 +25,10 @@ class PhaseDetailViewController: UIViewController {
     var phaseData = Phase()
     override func viewDidLoad() {
         super.viewDidLoad()
+        if isSupported() {
+            session.delegate = self
+            session.activate()
+        }
         
         // Do any additional setup after loading the view.
         switch phaseData.titlePhase {
@@ -44,4 +50,34 @@ class PhaseDetailViewController: UIViewController {
         titleSupportingLabel.text = phaseData.titleSupporting
         descriptionSupportingLabel.text = phaseData.descriptionSupporting
     }
+    @IBAction func startTapped(_ sender: CustomButton) {
+        session.sendMessage(["request":"response"], replyHandler: nil) { (error) in
+            print(error)
+        }
+    }
+    func isSupported()->Bool{
+        return WCSession.isSupported()
+    }
+}
+
+
+extension PhaseDetailViewController:WCSessionDelegate{
+    func sessionDidBecomeInactive(_ session: WCSession) {
+        
+    }
+    
+    func sessionDidDeactivate(_ session: WCSession) {
+        self.session.activate()
+    }
+    
+    func session(_ session: WCSession, activationDidCompleteWith activationState:
+        WCSessionActivationState, error: Error?) {
+        
+    }
+    
+    func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
+        titlePhaseLabel.text = "changed"
+        self.performSegue(withIdentifier: "goToCamera", sender: nil)
+    }
+    
 }

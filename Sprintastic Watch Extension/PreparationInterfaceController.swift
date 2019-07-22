@@ -29,7 +29,7 @@ class PreparationInterfaceController: WKInterfaceController {
     }
     
     func runTimer(){
-        timer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(self.updateTimer), userInfo: nil, repeats: false)
+        timer = Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(self.updateTimer), userInfo: nil, repeats: false)
     }
     
     func countTimer(){
@@ -45,14 +45,14 @@ class PreparationInterfaceController: WKInterfaceController {
     }
     
     @objc func updateTimer(){
-        bool = true
-        if bool{
-            timer.invalidate()
-            labelHint.setText("SHOW YOUR BODY'S SIDE")
-            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 5) {
+        labelHint.setText("FIT FULL YOUR BODY")
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()+5) {
+            self.labelHint.setText("SHOW YOUR BODY'S SIDE")
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()+5) {
                 self.goToCountDown()
             }
         }
+        
     }
     
     @objc func goToCountDown(){
