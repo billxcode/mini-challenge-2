@@ -110,6 +110,7 @@ class ImageClasifierViewController: UIViewController, AVCaptureVideoDataOutputSa
     override func viewDidLoad() {
         super.viewDidLoad()
         openCamera()
+        uiResult.isHidden = true
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(hideFirstViewDirection), userInfo: nil, repeats: true)
         
         // Do any additional setup after loading the view.
@@ -132,12 +133,13 @@ class ImageClasifierViewController: UIViewController, AVCaptureVideoDataOutputSa
         currentCount += 1
         if currentCount > 5 && currentCount < 10 {
             self.uiLabelDirection.text = "SHOW YOUR SIDE BODY"
-        } else if currentCount > 10 {
-            timer.invalidate()
-            currentCount = 1
+        } else if currentCount > 10 && currentCount < 13 {
             self.uiDirection.isHidden = false
             self.uiFirstDirectionLabel.isHidden = false
             self.uiFirstDirectionLabel.text = "STARTING BLOCK READY"
+        } else if currentCount > 13 {
+            timer.invalidate()
+            currentCount = 1
             self.timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(showCountDown), userInfo: nil, repeats: true)
         }
     }
@@ -155,12 +157,15 @@ class ImageClasifierViewController: UIViewController, AVCaptureVideoDataOutputSa
             self.uiDirection.isHidden = false
             self.uiFirstDirectionLabel.isHidden = false
             self.currentCountDown -= 1
-        } else if currentCount > 4 && currentCount <= 5 {
+        } else if currentCount > 4 && currentCount <= 7 {
             self.uiFirstDirectionLabel.text = "READY"
             self.uiResult.isHidden = true
             self.uiDirection.isHidden = true
             self.uiLabelSuggestion.isHidden = true
+        } else {
+            self.uiFirstDirectionLabel.isHidden = true
             self.timer.invalidate()
+            self.uiResult.isHidden = false
         }
     }
     
@@ -195,6 +200,7 @@ class ImageClasifierViewController: UIViewController, AVCaptureVideoDataOutputSa
     
     fileprivate func setupResult()
     {
+        view.addSubview(uiResult)
         view.addSubview(uiLeftSide)
         view.addSubview(uiRightSide)
         view.addSubview(uiLabelDirection)
@@ -207,6 +213,10 @@ class ImageClasifierViewController: UIViewController, AVCaptureVideoDataOutputSa
         let y = NSLayoutConstraint(item: uiFirstDirectionLabel, attribute: .centerY, relatedBy: .equal, toItem: uiDirection, attribute: .centerY, multiplier: 1.0, constant: 0)
         
         NSLayoutConstraint.activate([x,y])
+        
+        uiResult.topAnchor.constraint(equalTo: view.topAnchor, constant: 0).isActive = true
+        uiResult.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 0).isActive = true
+        uiResult.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 0).isActive = true
         
         uiClose.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -30).isActive = true
         uiClose.topAnchor.constraint(equalTo: view.topAnchor, constant: 20).isActive = true
