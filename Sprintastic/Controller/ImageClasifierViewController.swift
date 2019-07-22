@@ -96,6 +96,8 @@ class ImageClasifierViewController: UIViewController, AVCaptureVideoDataOutputSa
     
     var currentCount = 1
     
+    var currentCountDown = 3
+    
     @objc func closing(_ sender: UIButton!)
     {
         self.dismiss(animated: false, completion: nil)
@@ -132,9 +134,33 @@ class ImageClasifierViewController: UIViewController, AVCaptureVideoDataOutputSa
             self.uiLabelDirection.text = "SHOW YOUR SIDE BODY"
         } else if currentCount > 10 {
             timer.invalidate()
+            currentCount = 1
             self.uiDirection.isHidden = false
             self.uiFirstDirectionLabel.isHidden = false
             self.uiFirstDirectionLabel.text = "STARTING BLOCK READY"
+            self.timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(showCountDown), userInfo: nil, repeats: true)
+        }
+    }
+    
+    @objc func showCountDown()
+    {
+        currentCount += 1
+        self.uiLeftSide.isHidden = true
+        self.uiRightSide.isHidden = true
+        self.uiLabelDirection.isHidden = true
+        if currentCount <= 4 {
+            self.uiFirstDirectionLabel.text = String(self.currentCountDown)
+            self.uiDirection.backgroundColor = .black
+            self.uiDirection.alpha = 0.5
+            self.uiDirection.isHidden = false
+            self.uiFirstDirectionLabel.isHidden = false
+            self.currentCountDown -= 1
+        } else if currentCount > 4 && currentCount <= 5 {
+            self.uiFirstDirectionLabel.text = "READY"
+            self.uiResult.isHidden = true
+            self.uiDirection.isHidden = true
+            self.uiLabelSuggestion.isHidden = true
+            self.timer.invalidate()
         }
     }
     
