@@ -58,6 +58,10 @@ class PhaseDetailViewController: UIViewController {
     func isSupported()->Bool{
         return WCSession.isSupported()
     }
+    
+    func isReachable()->Bool {
+        return session.isReachable
+    }
 }
 
 
@@ -76,8 +80,9 @@ extension PhaseDetailViewController:WCSessionDelegate{
     }
     
     func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
-        titlePhaseLabel.text = "changed"
-        self.performSegue(withIdentifier: "goToCamera", sender: nil)
+        if isReachable(){
+            self.performSegue(withIdentifier: "goToCamera", sender: nil)
+        }
     }
     
 }

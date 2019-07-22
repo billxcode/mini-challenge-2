@@ -40,8 +40,10 @@ class InterfaceController: WKInterfaceController,WCSessionDelegate {
     
     @IBAction func startTapped() {
         self.pushController(withName: "goToPreparation", context: nil)
-        session.sendMessage(["request":"response"], replyHandler: nil) { (error) in
-            print(error)
+        if isReachable() {
+            session.sendMessage(["request":"response"], replyHandler: nil) { (error) in
+                print(error)
+            }
         }
     }
     private func isSupported()->Bool{

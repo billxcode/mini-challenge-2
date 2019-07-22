@@ -52,7 +52,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="627" y="346"/>
+            <point key="canvasLocation" x="495" y="344"/>
         </scene>
         <!--goToCountDown-->
         <scene sceneID="F1a-hU-RfD">
@@ -69,7 +69,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="908" y="345"/>
+            <point key="canvasLocation" x="850" y="343"/>
         </scene>
         <!--goToHint-->
         <scene sceneID="bo7-YV-Mq1">
