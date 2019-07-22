@@ -187,7 +187,6 @@ class ImageClasifierViewController: UIViewController, AVCaptureVideoDataOutputSa
         
         let rotation = UIInterfaceOrientation.landscapeRight.rawValue
         UIDevice.current.setValue(rotation, forKey: "orientation")
-        
     }
     
     func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
@@ -196,7 +195,7 @@ class ImageClasifierViewController: UIViewController, AVCaptureVideoDataOutputSa
         
         guard let pixelBuffer: CVPixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else { return }
         
-        guard let model = try? VNCoreMLModel(for: SprintModel().model) else { return }
+        guard let model = try? VNCoreMLModel(for: TrainingV2().model) else { return }
         let request = VNCoreMLRequest(model: model) {
             (request, error) in
             
