@@ -14,6 +14,13 @@ import AVKit
 class ImageClasifierViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
     @IBOutlet var superView: UIView!
     
+    let uiFirstDirectionImage: UIImageView = {
+        let uiimageview = UIImageView()
+        uiimageview.image = UIImage(named: "put your phone")
+        uiimageview.translatesAutoresizingMaskIntoConstraints = false
+        return uiimageview
+    }()
+    
     let uiDirection: UIView = {
         let uiview = UIView()
         uiview.backgroundColor = #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)
@@ -166,6 +173,20 @@ class ImageClasifierViewController: UIViewController, AVCaptureVideoDataOutputSa
             self.uiFirstDirectionLabel.isHidden = true
             self.timer.invalidate()
             self.uiResult.isHidden = false
+            self.currentCount = 1
+            self.timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(analyzeBody), userInfo: nil, repeats: true)
+            
+        }
+    }
+    
+    @objc func analyzeBody()
+    {
+        currentCount += 1
+        
+        if currentCount <= 5 {
+            timer.invalidate()
+            currentCount = 1
+            performSegue(withIdentifier: "ResultSegue", sender: nil)
         }
     }
     
@@ -208,10 +229,9 @@ class ImageClasifierViewController: UIViewController, AVCaptureVideoDataOutputSa
         view.addSubview(uiClose)
         view.addSubview(uiDirection)
         view.addSubview(uiFirstDirectionLabel)
-        
         let x = NSLayoutConstraint(item: uiFirstDirectionLabel, attribute: .centerX, relatedBy: .equal, toItem: uiDirection, attribute: .centerX, multiplier: 1.0, constant: 0)
         let y = NSLayoutConstraint(item: uiFirstDirectionLabel, attribute: .centerY, relatedBy: .equal, toItem: uiDirection, attribute: .centerY, multiplier: 1.0, constant: 0)
-        
+
         NSLayoutConstraint.activate([x,y])
         
         uiResult.topAnchor.constraint(equalTo: view.topAnchor, constant: 0).isActive = true
@@ -231,7 +251,7 @@ class ImageClasifierViewController: UIViewController, AVCaptureVideoDataOutputSa
         
         guard let pixelBuffer: CVPixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else { return }
         
-        guard let model = try? VNCoreMLModel(for: TrainingV2().model) else { return }
+        guard let model = try? VNCoreMLModel(for: TrainingV3().model) else { return }
         let request = VNCoreMLRequest(model: model) {
             (request, error) in
             
