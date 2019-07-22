@@ -41,6 +41,7 @@
 		09B5408722E4B83A0079A080 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 099EBEF422D86B8A00D3658F /* Assets.xcassets */; };
 		B77B4A5522E0565A004DB80C /* ImageClasifierViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77B4A5422E0565A004DB80C /* ImageClasifierViewController.swift */; };
 		B7B2DBF622DF0D61004C77FD /* ExerciseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B2DBF522DF0D61004C77FD /* ExerciseCollectionViewCell.swift */; };
+		B7C39DCB22E55CC50061F995 /* TrainingV2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B7C39DCA22E55CC50061F995 /* TrainingV2.mlmodel */; };
 		B7C55F2822E480500030D480 /* SprintModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B7C55F2722E480500030D480 /* SprintModel.mlmodel */; };
 		B7CD1D3322DEAE690056F46C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CD1D3222DEAE690056F46C /* BaseViewController.swift */; };
 		B7CD1D3622DEB9010056F46C /* CustomUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CD1D3522DEB9010056F46C /* CustomUIView.swift */; };
@@ -128,6 +129,7 @@
 		9B917BD0C039853B4C343625 /* Pods-Sprintastic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sprintastic.release.xcconfig"; path = "Target Support Files/Pods-Sprintastic/Pods-Sprintastic.release.xcconfig"; sourceTree = "<group>"; };
 		B77B4A5422E0565A004DB80C /* ImageClasifierViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClasifierViewController.swift; sourceTree = "<group>"; };
 		B7B2DBF522DF0D61004C77FD /* ExerciseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCollectionViewCell.swift; sourceTree = "<group>"; };
+		B7C39DCA22E55CC50061F995 /* TrainingV2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = TrainingV2.mlmodel; sourceTree = "<group>"; };
 		B7C55F0322E466080030D480 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B7C55F0722E4669D0030D480 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B7C55F2722E480500030D480 /* SprintModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SprintModel.mlmodel; sourceTree = "<group>"; };
@@ -286,6 +288,7 @@
 			children = (
 				B7C55F2722E480500030D480 /* SprintModel.mlmodel */,
 				B7E0C2F322E1E8C50042E1B3 /* ImageClassifier.mlmodel */,
+				B7C39DCA22E55CC50061F995 /* TrainingV2.mlmodel */,
 				099AB43922DDB30D0041E10B /* model_cpm.mlmodel */,
 			);
 			path = Data;
@@ -518,6 +521,7 @@
 				099EBF1222D8BA1B00D3658F /* CustomButton.swift in Sources */,
 				099AB43C22DDB51E0041E10B /* VideoCapture.swift in Sources */,
 				099AB44022DDB7F70041E10B /* MovingAverageFilter.swift in Sources */,
+				B7C39DCB22E55CC50061F995 /* TrainingV2.mlmodel in Sources */,
 				099EBEF022D86B8900D3658F /* ViewController.swift in Sources */,
 				099AB43822DDB1E20041E10B /* CameraViewController.swift in Sources */,
 				099EBEEE22D86B8900D3658F /* AppDelegate.swift in Sources */,

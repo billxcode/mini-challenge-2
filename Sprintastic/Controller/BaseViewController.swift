@@ -14,7 +14,6 @@ class BaseViewController: UIViewController, UIApplicationDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        changesLayout()
         // Do any additional setup after loading the view.
     }
     
@@ -24,20 +23,6 @@ class BaseViewController: UIViewController, UIApplicationDelegate {
     
     override var shouldAutorotate: Bool {
         return false
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        changesLayout()
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        changesLayout()
-    }
-    
-    public func changesLayout()
-    {
-        let width = view.frame.width
-        self.navigationController?.navigationBar.frame = CGRect(x: 0, y: 25, width: width, height: 100)
     }
     
 
