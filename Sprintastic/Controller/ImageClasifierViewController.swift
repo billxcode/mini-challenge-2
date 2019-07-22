@@ -173,6 +173,20 @@ class ImageClasifierViewController: UIViewController, AVCaptureVideoDataOutputSa
             self.uiFirstDirectionLabel.isHidden = true
             self.timer.invalidate()
             self.uiResult.isHidden = false
+            self.currentCount = 1
+            self.timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(analyzeBody), userInfo: nil, repeats: true)
+            
+        }
+    }
+    
+    @objc func analyzeBody()
+    {
+        currentCount += 1
+        
+        if currentCount <= 5 {
+            timer.invalidate()
+            currentCount = 1
+            performSegue(withIdentifier: "ResultSegue", sender: nil)
         }
     }
     
@@ -237,7 +251,7 @@ class ImageClasifierViewController: UIViewController, AVCaptureVideoDataOutputSa
         
         guard let pixelBuffer: CVPixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else { return }
         
-        guard let model = try? VNCoreMLModel(for: TrainingV2().model) else { return }
+        guard let model = try? VNCoreMLModel(for: TrainingV3().model) else { return }
         let request = VNCoreMLRequest(model: model) {
             (request, error) in
             
